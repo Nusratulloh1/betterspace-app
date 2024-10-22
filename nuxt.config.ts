@@ -1,9 +1,12 @@
 import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
+import Aura from '@primevue/themes/aura';
+import Components from 'unplugin-vue-components/vite';
+import { PrimeVueResolver } from 'unplugin-vue-components/resolvers';
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
+  spaLoadingTemplate: './app-loading.html',
   // Apply middleware to a specific route
   routeRules: {
     '/protected-route/**': { middleware: 'auth' },
@@ -30,23 +33,25 @@ export default defineNuxtConfig({
   },
 
   css: [
-    // 'naive-ui/dist/naive-ui.css',
+    "primeicons/primeicons.css",
     '~/assets/styles/scss/main.scss' // custom styles, if any
   ],
-  modules: [
-    '@pinia/nuxt'
-  ],
-  typescript: {
-    strict: true,
-    shim: false,
+  modules: ['@pinia/nuxt', '@nuxt/fonts', '@primevue/nuxt-module'],
+  primevue: {
+    options: {
+      theme: {
+        preset: Aura,
+      },
+    }
   },
+  plugins: ['~/plugins/vue-the-mask.ts'],
   vite: {
     plugins: [
       AutoImport({
         resolvers: [NaiveUiResolver()],
       }),
       Components({
-        resolvers: [NaiveUiResolver()],
+        resolvers: [NaiveUiResolver(), PrimeVueResolver()],
       }),
     ],
   },

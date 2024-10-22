@@ -6,5 +6,5 @@
 // biome-ignore lint: disable
 export {}
 declare global {
-
+  const NIcon: typeof import('naive-ui')['NIcon']
 }

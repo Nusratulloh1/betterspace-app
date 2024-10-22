@@ -38,6 +38,7 @@ export const useTgWebAppStore = defineStore('tgWebAppStore', {
             if (this.webAppData.version > '6.0') {
                 this.setWebAppData()
                 this.setInitData()
+                // this.setUserData()
                 this.setTheme()
                 this.setViewport()
             }
@@ -45,7 +46,6 @@ export const useTgWebAppStore = defineStore('tgWebAppStore', {
 
         setTheme() {
             this.theme = useWebAppTheme()
-            console.log(useWebAppTheme());
 
         },
 
@@ -84,8 +84,9 @@ export const useTgWebAppStore = defineStore('tgWebAppStore', {
                                     useWebAppPopup().showConfirm('Для оформления заказа, нужно поделиться телефоном, повторите попытку', (ok) => {
                                         if (ok) {
                                             storageInit()
+                                            resolve(true)
                                         } else {
-                                            useWebAppPopup().showAlert('Если вы не хотите делиться контактами, укажите их в ручную')
+                                            // useWebAppPopup().showAlert('Если вы не хотите делиться контактами, укажите их в ручную')
                                             resolve(false)
                                         }
                                     })

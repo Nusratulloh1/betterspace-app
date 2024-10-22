@@ -11,7 +11,7 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@antfu/utils@^0.7.10":
+"@antfu/utils@^0.7.10", "@antfu/utils@^0.7.7":
   version "0.7.10"
 
 "@aw-web-design/x-default-browser@1.4.126":
@@ -709,6 +709,16 @@
 "@bcoe/v8-coverage@^0.2.3":
   version "0.2.3"
 
+"@capsizecss/metrics@^2.1.1":
+  version "2.2.0"
+
+"@capsizecss/unpack@^2.0.1":
+  version "2.3.0"
+  dependencies:
+    blob-to-buffer "^1.2.8"
+    cross-fetch "^3.0.4"
+    fontkit "^2.0.2"
+
 "@cloudflare/kv-asset-handler@^0.3.4":
   version "0.3.4"
   dependencies:
@@ -719,21 +729,15 @@
 
 "@css-render/plugin-bem@^0.15.14":
   version "0.15.14"
-  resolved "https://registry.npmjs.org/@css-render/plugin-bem/-/plugin-bem-0.15.14.tgz"
-  integrity sha512-QK513CJ7yEQxm/P3EwsI+d+ha8kSOcjGvD6SevM41neEMxdULE+18iuQK6tEChAWMOQNQPLG/Rw3Khb69r5neg==
 
 "@css-render/vue3-ssr@^0.15.10", "@css-render/vue3-ssr@^0.15.14":
   version "0.15.14"
-  resolved "https://registry.npmjs.org/@css-render/vue3-ssr/-/vue3-ssr-0.15.14.tgz"
-  integrity sha512-//8027GSbxE9n3QlD73xFY6z4ZbHbvrOVB7AO6hsmrEzGbg+h2A09HboUyDgu+xsmj7JnvJD39Irt+2D0+iV8g==
 
 "@discoveryjs/json-ext@^0.5.3":
   version "0.5.7"
 
 "@emotion/hash@~0.8.0":
   version "0.8.0"
-  resolved "https://registry.npmjs.org/@emotion/hash/-/hash-0.8.0.tgz"
-  integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
 "@esbuild/darwin-arm64@0.18.20":
   version "0.18.20"
@@ -747,11 +751,214 @@
 "@esbuild/darwin-arm64@0.23.1":
   version "0.23.1"
 
+"@esbuild/darwin-arm64@0.24.0":
+  version "0.24.0"
+
 "@fal-works/esbuild-plugin-global-externals@^2.1.2":
   version "2.1.2"
 
 "@fastify/busboy@^2.0.0":
   version "2.1.1"
+
+"@formkit/addons@^1.6.5":
+  version "1.6.7"
+  resolved "https://registry.npmjs.org/@formkit/addons/-/addons-1.6.7.tgz"
+  integrity sha512-R5bnDMQPkDw4YXzeUttmvF0YTiOIpM/bQPC9hN2C4VMRN0/m41HEzsoVGnK6K9FwhUY7jLohTHZSOrlhp8Xnbg==
+  dependencies:
+    "@formkit/auto-animate" latest
+    "@formkit/core" "1.6.7"
+    "@formkit/inputs" "1.6.7"
+    "@formkit/utils" "1.6.7"
+
+"@formkit/auto-animate@latest":
+  version "0.8.2"
+  resolved "https://registry.npmjs.org/@formkit/auto-animate/-/auto-animate-0.8.2.tgz"
+  integrity sha512-SwPWfeRa5veb1hOIBMdzI+73te5puUBHmqqaF1Bu7FjvxlYSz/kJcZKSa9Cg60zL0uRNeJL2SbRxV6Jp6Q1nFQ==
+
+"@formkit/core@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@formkit/core/-/core-1.2.2.tgz"
+  integrity sha512-aJoZW7ZWXdwVBdw2acv62aPaecZ44PnK9eyp/hdMrMxT9xW3I84MytCdII8DYpxLmloaE+NoUANZIvlkTRGlHg==
+  dependencies:
+    "@formkit/utils" "1.2.2"
+
+"@formkit/core@1.6.7":
+  version "1.6.7"
+  resolved "https://registry.npmjs.org/@formkit/core/-/core-1.6.7.tgz"
+  integrity sha512-wEoWK7crcCPRV5KJfEGLjjIS+qwbuD8I5Ur0zTtKRQrdO4oRL6kVoubxQOpgnq1l8sWfcRY8Wpf22Wna2LD20Q==
+  dependencies:
+    "@formkit/utils" "1.6.7"
+
+"@formkit/dev@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@formkit/dev/-/dev-1.2.2.tgz"
+  integrity sha512-C3KzolVAQE732W2aCKgLDXyhnxCNFtWQEPvs677ZAEciMBrZEgU6ZDleb8XTX7FIF4m4PWszfheQIbdy4p0K+Q==
+  dependencies:
+    "@formkit/core" "1.2.2"
+    "@formkit/utils" "1.2.2"
+
+"@formkit/dev@1.6.7":
+  version "1.6.7"
+  resolved "https://registry.npmjs.org/@formkit/dev/-/dev-1.6.7.tgz"
+  integrity sha512-mMtkfvfkl1P1v0haizUE4DadalbG9/3m0ZymmMKKb0F3pojQJFtdfohy67ZQKtmzy4bamowHyEUr+XzLbKY2EA==
+  dependencies:
+    "@formkit/core" "1.6.7"
+    "@formkit/utils" "1.6.7"
+
+"@formkit/i18n@^1.6.5", "@formkit/i18n@1.6.7":
+  version "1.6.7"
+  resolved "https://registry.npmjs.org/@formkit/i18n/-/i18n-1.6.7.tgz"
+  integrity sha512-i9Mnc2XHCm2c10fppEIxdGv+jqOaixO22iFXX3xF+AkJnxtOzV5hP4f3/TeG+BNahGUq8vj+e1y+VMnjS6duxA==
+  dependencies:
+    "@formkit/core" "1.6.7"
+    "@formkit/utils" "1.6.7"
+    "@formkit/validation" "1.6.7"
+
+"@formkit/i18n@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@formkit/i18n/-/i18n-1.2.2.tgz"
+  integrity sha512-HABPlja6xQk0JztvQnbnhVzFqhgM6XqlqOzGNOtCOcOpMUSY3okT7NSMPTK/Zq4Yq4XQmbJgi/toGfYakqLfhA==
+  dependencies:
+    "@formkit/core" "1.2.2"
+    "@formkit/utils" "1.2.2"
+    "@formkit/validation" "1.2.2"
+
+"@formkit/inputs@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@formkit/inputs/-/inputs-1.2.2.tgz"
+  integrity sha512-apVGQ+9eHRD8qi9h0LRvaI9UrumDUwXQSw3gMQfDvfCjkqZXY4+m/WS3FraqHH4Mqs7cjryYRYrHYpAaVQtqKQ==
+  dependencies:
+    "@formkit/core" "1.2.2"
+    "@formkit/utils" "1.2.2"
+
+"@formkit/inputs@1.6.7":
+  version "1.6.7"
+  resolved "https://registry.npmjs.org/@formkit/inputs/-/inputs-1.6.7.tgz"
+  integrity sha512-VLxoAJn5VGOEXkGI499lju5Irnu12cu+spI1HL//46nlVkqnb1XcV0k0MK9K+hogz4fGmyZUvHf0lxU6dh7ZZQ==
+  dependencies:
+    "@formkit/core" "1.6.7"
+    "@formkit/utils" "1.6.7"
+
+"@formkit/nuxt@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@formkit/nuxt/-/nuxt-1.2.2.tgz"
+  integrity sha512-qrYex9vhpnpMP32T1E9ZbcRPZIRzGeY0f8bgMUaY3v8DKcEN9okSDYKu8poGUqB5W6wjxgaXvXwhbaDb/Njspw==
+  dependencies:
+    "@formkit/core" "1.2.2"
+    "@formkit/i18n" "1.2.2"
+    "@formkit/vue" "1.2.2"
+    "@nuxt/kit" "^3.7.4"
+    chokidar "^3.5.3"
+    nuxi "^3.9.0"
+    pathe "^1.1.1"
+    unplugin-formkit "^0.2.7"
+
+"@formkit/observer@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@formkit/observer/-/observer-1.2.2.tgz"
+  integrity sha512-D9bVRfs2FEuzuIdC2BFSpayV4xyIexbRc2JTLkdwgsx9rROz9bh67M+VZ7zmrONuikgrD+dfaopIXK5sRZPGSQ==
+  dependencies:
+    "@formkit/core" "1.2.2"
+    "@formkit/utils" "1.2.2"
+
+"@formkit/observer@1.6.7":
+  version "1.6.7"
+  resolved "https://registry.npmjs.org/@formkit/observer/-/observer-1.6.7.tgz"
+  integrity sha512-ei5z5ernNMKKiBuoRcFgEthhP1i+KKb02hsPsikLA3XehuoJdWIejn9AAq6jOEGbUMZ5XAAgFJcxzO5tnKuPnw==
+  dependencies:
+    "@formkit/core" "1.6.7"
+    "@formkit/utils" "1.6.7"
+
+"@formkit/rules@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@formkit/rules/-/rules-1.2.2.tgz"
+  integrity sha512-WfDZfDDuX9lAyvCvxLwTeszQNd59Ztnyxx6zjRvzF6zHMD4g5swb3Jv6jy0Jwic0nl4+04IEhpBM4Cl5kQuAvA==
+  dependencies:
+    "@formkit/core" "1.2.2"
+    "@formkit/utils" "1.2.2"
+    "@formkit/validation" "1.2.2"
+
+"@formkit/rules@1.6.7":
+  version "1.6.7"
+  resolved "https://registry.npmjs.org/@formkit/rules/-/rules-1.6.7.tgz"
+  integrity sha512-adzOuTvf6ghZbV0g0ZH9+MU9jfoF4DojBztAbqzFP/fT4d+WxhSHHlkWq6PU66fHPy3OH4DkWdx9trL1wGHuzQ==
+  dependencies:
+    "@formkit/core" "1.6.7"
+    "@formkit/utils" "1.6.7"
+    "@formkit/validation" "1.6.7"
+
+"@formkit/themes@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@formkit/themes/-/themes-1.2.2.tgz"
+  integrity sha512-YxNmReXkvuF9OP6wAHVyJvTZ+hd+zRfOyTjie75fQ1EkWCjcn2jk+DCY4U+IkgOnq6A/vcKjP5vyuQqsglUgAA==
+  dependencies:
+    "@formkit/core" "1.2.2"
+
+"@formkit/themes@1.6.7":
+  version "1.6.7"
+  resolved "https://registry.npmjs.org/@formkit/themes/-/themes-1.6.7.tgz"
+  integrity sha512-TIiWr4TMAFUg1pQz2E4GErfAhBv2Q2VbWlk6pqXPWI8UyPTjmcinEnCSIWDCX6FPPqiYShBnh8123nTO7pyvjA==
+  dependencies:
+    "@formkit/core" "1.6.7"
+
+"@formkit/utils@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@formkit/utils/-/utils-1.2.2.tgz"
+  integrity sha512-4EGm4nfZGSJik0QRAEybxO52F3QhbOfX/KgtWfB3/dDUEOCx5RWDxIs/CU2yI4bceDl2aK8l/yDYwCYK9SO5MA==
+
+"@formkit/utils@1.6.7":
+  version "1.6.7"
+  resolved "https://registry.npmjs.org/@formkit/utils/-/utils-1.6.7.tgz"
+  integrity sha512-aU3CDLzCkC5Dnx6iS3swbsIbys7E+2VOaLWFRnS7wk7kFa8EnENi67qc2E2KFE05RT4UCEAIYMAQY6wvek29gA==
+
+"@formkit/validation@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@formkit/validation/-/validation-1.2.2.tgz"
+  integrity sha512-jUfEjh3HAWlPmcuI+c7ullWKbm3oIRlQvbqN1r2GDqMWWLZ47+k6PVELV/eU7gxrF0mpQcQY5r8zvA1IFocCGA==
+  dependencies:
+    "@formkit/core" "1.2.2"
+    "@formkit/observer" "1.2.2"
+    "@formkit/utils" "1.2.2"
+
+"@formkit/validation@1.6.7":
+  version "1.6.7"
+  resolved "https://registry.npmjs.org/@formkit/validation/-/validation-1.6.7.tgz"
+  integrity sha512-4wUUG+Pz3hPeiLccYiXAzsrF7SXk28PYAeHJeBngIv9K82ieljBJpvvuCJDyA6SeSMOvmbI92TG4wx4u5cDLOw==
+  dependencies:
+    "@formkit/core" "1.6.7"
+    "@formkit/observer" "1.6.7"
+    "@formkit/utils" "1.6.7"
+
+"@formkit/vue@^1.6.5":
+  version "1.6.7"
+  resolved "https://registry.npmjs.org/@formkit/vue/-/vue-1.6.7.tgz"
+  integrity sha512-w3kjQD0lvtImyyTiy+fLaIZM/4r6sLDbpBIwke8ZA/d5orzNE96JPaloVKbH+HwCo6+z/1mclh1pW1S+7RgMcw==
+  dependencies:
+    "@formkit/core" "1.6.7"
+    "@formkit/dev" "1.6.7"
+    "@formkit/i18n" "1.6.7"
+    "@formkit/inputs" "1.6.7"
+    "@formkit/observer" "1.6.7"
+    "@formkit/rules" "1.6.7"
+    "@formkit/themes" "1.6.7"
+    "@formkit/utils" "1.6.7"
+    "@formkit/validation" "1.6.7"
+
+"@formkit/vue@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@formkit/vue/-/vue-1.2.2.tgz"
+  integrity sha512-UH7CrEfsj1otO+EMgLYFWsLp1A8s3GYiRik3YPII6sVuImXYuLCtz++oT3JrnM5hmUJWmEjxZoi5gRYJzxa0ow==
+  dependencies:
+    "@formkit/core" "1.2.2"
+    "@formkit/dev" "1.2.2"
+    "@formkit/i18n" "1.2.2"
+    "@formkit/inputs" "1.2.2"
+    "@formkit/observer" "1.2.2"
+    "@formkit/rules" "1.2.2"
+    "@formkit/themes" "1.2.2"
+    "@formkit/utils" "1.2.2"
+    "@formkit/validation" "1.2.2"
+    vue "^3.3.4"
 
 "@intlify/core-base@9.14.1":
   version "9.14.1"
@@ -814,8 +1021,6 @@
 
 "@juggle/resize-observer@^3.3.1":
   version "3.4.0"
-  resolved "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.4.0.tgz"
-  integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
 
 "@kwsites/file-exists@^1.1.1":
   version "1.1.1"
@@ -877,7 +1082,7 @@
 "@nuxt/devalue@^2.0.2":
   version "2.0.2"
 
-"@nuxt/devtools-kit@1.6.0":
+"@nuxt/devtools-kit@^1.6.0", "@nuxt/devtools-kit@1.6.0":
   version "1.6.0"
   dependencies:
     "@nuxt/kit" "^3.13.2"
@@ -939,7 +1144,31 @@
     which "^3.0.1"
     ws "^8.18.0"
 
-"@nuxt/kit@^3.13.1", "@nuxt/kit@^3.13.2", "@nuxt/kit@^3.2.2", "@nuxt/kit@^3.5.0", "@nuxt/kit@3.13.2":
+"@nuxt/fonts@^0.10.1":
+  version "0.10.1"
+  dependencies:
+    "@nuxt/devtools-kit" "^1.6.0"
+    "@nuxt/kit" "^3.13.2"
+    chalk "^5.3.0"
+    css-tree "^3.0.0"
+    defu "^6.1.4"
+    esbuild "^0.24.0"
+    fontaine "^0.5.0"
+    h3 "^1.13.0"
+    jiti "^2.3.3"
+    magic-regexp "^0.8.0"
+    magic-string "^0.30.12"
+    node-fetch-native "^1.6.4"
+    ohash "^1.1.4"
+    pathe "^1.1.2"
+    sirv "^3.0.0"
+    tinyglobby "^0.2.9"
+    ufo "^1.5.4"
+    unifont "^0.1.4"
+    unplugin "^1.14.1"
+    unstorage "^1.12.0"
+
+"@nuxt/kit@^3.13.1", "@nuxt/kit@^3.13.2", "@nuxt/kit@^3.2.2", "@nuxt/kit@^3.5.0", "@nuxt/kit@^3.7.3", "@nuxt/kit@^3.7.4", "@nuxt/kit@3.13.2":
   version "3.13.2"
   dependencies:
     "@nuxt/schema" "3.13.2"
@@ -1090,6 +1319,55 @@
 "@polka/url@^1.0.0-next.24":
   version "1.0.0-next.28"
 
+"@primeuix/styled@^0.2.0":
+  version "0.2.0"
+  dependencies:
+    "@primeuix/utils" "^0.2.0"
+
+"@primeuix/utils@^0.2.0":
+  version "0.2.0"
+
+"@primevue/auto-import-resolver@4.1.1":
+  version "4.1.1"
+  dependencies:
+    "@primevue/metadata" "4.1.1"
+
+"@primevue/core@4.1.1":
+  version "4.1.1"
+  dependencies:
+    "@primeuix/styled" "^0.2.0"
+    "@primeuix/utils" "^0.2.0"
+
+"@primevue/icons@4.1.1":
+  version "4.1.1"
+  dependencies:
+    "@primeuix/utils" "^0.2.0"
+    "@primevue/core" "4.1.1"
+
+"@primevue/metadata@4.1.1":
+  version "4.1.1"
+
+"@primevue/nuxt-module@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.npmjs.org/@primevue/nuxt-module/-/nuxt-module-4.1.1.tgz"
+  integrity sha512-MaX4bmVssQLhcL3le5cNyJNhDzfpodZ7SeRUjiDQOFBsXrxE4Pij4iawgLjgsJdRb6ZQs9JIwu0aIQNdGLeApQ==
+  dependencies:
+    "@nuxt/kit" "^3.7.3"
+    "@primeuix/styled" "^0.2.0"
+    "@primeuix/utils" "^0.2.0"
+    "@primevue/auto-import-resolver" "4.1.1"
+    "@primevue/metadata" "4.1.1"
+    pathe "^1.1.2"
+    primevue "4.1.1"
+    unplugin-vue-components "0.27.0"
+
+"@primevue/themes@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.npmjs.org/@primevue/themes/-/themes-4.1.1.tgz"
+  integrity sha512-ec2gBN2vP0ydGtGAzC0nYCFqYN7CzvXxnlJqcvcPIo3rP/pcdj+FkzAe3y2DMG3OorYtqdzoyGtBefQrx3v5ag==
+  dependencies:
+    "@primeuix/styled" "^0.2.0"
+
 "@rollup/plugin-alias@^5.1.0":
   version "5.1.1"
 
@@ -1152,6 +1430,28 @@
 
 "@rollup/rollup-darwin-arm64@4.24.0":
   version "4.24.0"
+
+"@sfxcode/formkit-primevue@^1.4.2":
+  version "1.11.3"
+  resolved "https://registry.npmjs.org/@sfxcode/formkit-primevue/-/formkit-primevue-1.11.3.tgz"
+  integrity sha512-31PhbfXLBebVmRD5qPy9yZjyGynRtA3xG5KabghoZBAHIPUDSYJeabQkbfumPTZ+EfFMjMKSwBX6mv8gN27K5g==
+  dependencies:
+    "@formkit/addons" "^1.6.5"
+    "@formkit/i18n" "^1.6.5"
+    "@formkit/vue" "^1.6.5"
+    primeicons "^7.0.0"
+    primevue "^3.52.0"
+
+"@sfxcode/nuxt-primevue@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.npmjs.org/@sfxcode/nuxt-primevue/-/nuxt-primevue-1.4.2.tgz"
+  integrity sha512-3kbfzaX7Nxmk6NWWP4xQptB+btmW7a+QC0CW0eSChc7eOaa1cTCM4GQIpq/l7MeXzb1WSbIr7tuL5PnX5EuJBw==
+  dependencies:
+    "@formkit/nuxt" "1.2.2"
+    "@nuxt/kit" "^3.7.4"
+    "@sfxcode/formkit-primevue" "^1.4.2"
+    primeicons "^6.0.1"
+    primevue "^3.36.0"
 
 "@sindresorhus/merge-streams@^2.1.0":
   version "2.3.0"
@@ -1397,6 +1697,11 @@
     "@types/express" "^4.7.0"
     file-system-cache "2.3.0"
 
+"@swc/helpers@^0.5.12":
+  version "0.5.13"
+  dependencies:
+    tslib "^2.4.0"
+
 "@trysound/sax@0.2.0":
   version "0.2.0"
 
@@ -1496,8 +1801,6 @@
 
 "@types/katex@^0.16.2":
   version "0.16.7"
-  resolved "https://registry.npmjs.org/@types/katex/-/katex-0.16.7.tgz"
-  integrity sha512-HMwFiRujE5PjrgwHQ25+bsLJgowjGjm5Z8FVSf0N6PwgJrwxH0QxzHYDcKsTfV3wva0vzrpqMTJS2jXPr5BMEQ==
 
 "@types/lodash-es@^4.17.9":
   version "4.17.12"
@@ -1520,12 +1823,12 @@
     form-data "^4.0.0"
 
 "@types/node@*", "@types/node@^14.18.0 || >=16.10.0", "@types/node@^18.0.0 || >=20.0.0", "@types/node@>= 14":
-  version "22.7.7"
+  version "22.7.8"
   dependencies:
     undici-types "~6.19.2"
 
 "@types/node@^18.0.0":
-  version "18.19.57"
+  version "18.19.58"
   dependencies:
     undici-types "~5.26.4"
 
@@ -2038,7 +2341,7 @@ balanced-match@^1.0.0:
 bare-events@^2.2.0:
   version "2.5.0"
 
-base64-js@^1.3.1:
+base64-js@^1.1.2, base64-js@^1.3.0, base64-js@^1.3.1:
   version "1.5.1"
 
 better-opn@^3.0.2:
@@ -2066,6 +2369,9 @@ bl@^4.0.3, bl@^4.1.0:
     buffer "^5.5.0"
     inherits "^2.0.4"
     readable-stream "^3.4.0"
+
+blob-to-buffer@^1.2.8:
+  version "1.2.9"
 
 blueimp-md5@^2.10.0:
   version "2.19.0"
@@ -2110,6 +2416,11 @@ braces@^3.0.3, braces@~3.0.2:
   dependencies:
     fill-range "^7.1.1"
 
+brotli@^1.3.2:
+  version "1.3.3"
+  dependencies:
+    base64-js "^1.1.2"
+
 browser-assert@^1.2.1:
   version "1.2.1"
 
@@ -2119,12 +2430,12 @@ browserify-zlib@^0.1.4:
     pako "~0.2.0"
 
 browserslist@^4.0.0, browserslist@^4.23.3, browserslist@^4.24.0, "browserslist@>= 4.21.0":
-  version "4.24.0"
+  version "4.24.2"
   dependencies:
-    caniuse-lite "^1.0.30001663"
-    electron-to-chromium "^1.5.28"
+    caniuse-lite "^1.0.30001669"
+    electron-to-chromium "^1.5.41"
     node-releases "^2.0.18"
-    update-browserslist-db "^1.1.0"
+    update-browserslist-db "^1.1.1"
 
 buffer-crc32@^1.0.0:
   version "1.0.0"
@@ -2213,7 +2524,7 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001646, caniuse-lite@^1.0.30001663:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001646, caniuse-lite@^1.0.30001669:
   version "1.0.30001669"
 
 chai@^4.3.7:
@@ -2349,6 +2660,9 @@ clone-deep@^4.0.1:
 
 clone@^1.0.2:
   version "1.0.4"
+
+clone@^2.1.2:
+  version "2.1.2"
 
 cluster-key-slot@^1.1.0:
   version "1.1.2"
@@ -2515,6 +2829,11 @@ croner@^8.0.2:
 cronstrue@^2.50.0:
   version "2.50.0"
 
+cross-fetch@^3.0.4:
+  version "3.1.8"
+  dependencies:
+    node-fetch "^2.6.12"
+
 cross-spawn@^7.0.0, cross-spawn@^7.0.3:
   version "7.0.3"
   dependencies:
@@ -2538,8 +2857,6 @@ css-declaration-sorter@^7.2.0:
 
 css-render@^0.15.10, css-render@^0.15.14, css-render@~0.15.14:
   version "0.15.14"
-  resolved "https://registry.npmjs.org/css-render/-/css-render-0.15.14.tgz"
-  integrity sha512-9nF4PdUle+5ta4W5SyZdLCCmFd37uVimSjg1evcTqKJCyvCEEj12WKzOSBNak6r4im4J4iYXKH1OWpUV5LBYFg==
   dependencies:
     "@emotion/hash" "~0.8.0"
     csstype "~3.0.5"
@@ -2557,6 +2874,12 @@ css-tree@^2.3.1:
   version "2.3.1"
   dependencies:
     mdn-data "2.0.30"
+    source-map-js "^1.0.1"
+
+css-tree@^3.0.0:
+  version "3.0.0"
+  dependencies:
+    mdn-data "2.10.0"
     source-map-js "^1.0.1"
 
 css-tree@~2.2.0:
@@ -2624,18 +2947,12 @@ csstype@^3.1.3:
 
 csstype@~3.0.5:
   version "3.0.11"
-  resolved "https://registry.npmjs.org/csstype/-/csstype-3.0.11.tgz"
-  integrity sha512-sa6P2wJ+CAbgyy4KFssIb/JNMLxFvKF1pCYCSXS8ZMuqZnMsrxqI2E5sPyoTpxoPU/gVZMzr2zjOfg8GIZOMsw==
 
 date-fns-tz@^3.1.3:
   version "3.2.0"
-  resolved "https://registry.npmjs.org/date-fns-tz/-/date-fns-tz-3.2.0.tgz"
-  integrity sha512-sg8HqoTEulcbbbVXeg84u5UnlsQa8GS5QXMqjjYIhS4abEVVKIUwe0/l/UhrZdKaL/W5eWZNlbTeEIiOXTcsBQ==
 
 "date-fns@^3.0.0 || ^4.0.0", date-fns@^3.6.0:
   version "3.6.0"
-  resolved "https://registry.npmjs.org/date-fns/-/date-fns-3.6.0.tgz"
-  integrity sha512-fRHTG8g/Gif+kSh50gaGEdToemgfj74aRX3swtiouboip5JDLAyDE9F11nHMIcvOaXeOC6D7SpNhi7uFyB7Uww==
 
 date-time@^3.1.0:
   version "3.1.0"
@@ -2760,6 +3077,9 @@ detect-port@^1.3.0:
 devalue@^5.0.0:
   version "5.1.1"
 
+dfa@^1.2.0:
+  version "1.2.0"
+
 didyoumean@^1.2.2:
   version "1.2.2"
 
@@ -2829,8 +3149,8 @@ ejs@^3.1.8:
   dependencies:
     jake "^10.8.5"
 
-electron-to-chromium@^1.5.28:
-  version "1.5.41"
+electron-to-chromium@^1.5.41:
+  version "1.5.42"
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -3001,6 +3321,34 @@ esbuild@^0.23.1:
     "@esbuild/win32-ia32" "0.23.1"
     "@esbuild/win32-x64" "0.23.1"
 
+esbuild@^0.24.0:
+  version "0.24.0"
+  optionalDependencies:
+    "@esbuild/aix-ppc64" "0.24.0"
+    "@esbuild/android-arm" "0.24.0"
+    "@esbuild/android-arm64" "0.24.0"
+    "@esbuild/android-x64" "0.24.0"
+    "@esbuild/darwin-arm64" "0.24.0"
+    "@esbuild/darwin-x64" "0.24.0"
+    "@esbuild/freebsd-arm64" "0.24.0"
+    "@esbuild/freebsd-x64" "0.24.0"
+    "@esbuild/linux-arm" "0.24.0"
+    "@esbuild/linux-arm64" "0.24.0"
+    "@esbuild/linux-ia32" "0.24.0"
+    "@esbuild/linux-loong64" "0.24.0"
+    "@esbuild/linux-mips64el" "0.24.0"
+    "@esbuild/linux-ppc64" "0.24.0"
+    "@esbuild/linux-riscv64" "0.24.0"
+    "@esbuild/linux-s390x" "0.24.0"
+    "@esbuild/linux-x64" "0.24.0"
+    "@esbuild/netbsd-x64" "0.24.0"
+    "@esbuild/openbsd-arm64" "0.24.0"
+    "@esbuild/openbsd-x64" "0.24.0"
+    "@esbuild/sunos-x64" "0.24.0"
+    "@esbuild/win32-arm64" "0.24.0"
+    "@esbuild/win32-ia32" "0.24.0"
+    "@esbuild/win32-x64" "0.24.0"
+
 escalade@^3.1.1, escalade@^3.2.0:
   version "3.2.0"
 
@@ -3038,8 +3386,6 @@ events@^3.3.0:
 
 evtd@^0.2.2, evtd@^0.2.4:
   version "0.2.4"
-  resolved "https://registry.npmjs.org/evtd/-/evtd-0.2.4.tgz"
-  integrity sha512-qaeGN5bx63s/AXgQo8gj6fBkxge+OoLddLniox5qtLAEY5HSnuSlISXVPxnSae1dWblvTh4/HoMIB+mbMsvZzw==
 
 execa@^5.0.0:
   version "5.1.1"
@@ -3143,6 +3489,9 @@ extract-zip@^1.6.6:
     debug "^2.6.9"
     mkdirp "^0.5.4"
     yauzl "^2.10.0"
+
+fast-deep-equal@^3.1.3:
+  version "3.1.3"
 
 fast-diff@^1.2.0:
   version "1.3.0"
@@ -3253,6 +3602,30 @@ flatted@^3.2.7, flatted@^3.3.1:
 
 flow-parser@0.*:
   version "0.250.0"
+
+fontaine@^0.5.0:
+  version "0.5.0"
+  dependencies:
+    "@capsizecss/metrics" "^2.1.1"
+    "@capsizecss/unpack" "^2.0.1"
+    magic-regexp "^0.8.0"
+    magic-string "^0.30.8"
+    pathe "^1.1.2"
+    ufo "^1.4.0"
+    unplugin "^1.8.3"
+
+fontkit@^2.0.2:
+  version "2.0.4"
+  dependencies:
+    "@swc/helpers" "^0.5.12"
+    brotli "^1.3.2"
+    clone "^2.1.2"
+    dfa "^1.2.0"
+    fast-deep-equal "^3.1.3"
+    restructure "^3.0.0"
+    tiny-inflate "^1.0.3"
+    unicode-properties "^1.4.0"
+    unicode-trie "^2.0.0"
 
 for-each@^0.3.3:
   version "0.3.3"
@@ -3503,7 +3876,7 @@ gzip-size@^7.0.0:
   dependencies:
     duplexer "^0.1.2"
 
-h3@^1.12.0:
+h3@^1.12.0, h3@^1.13.0:
   version "1.13.0"
   dependencies:
     cookie-es "^1.2.2"
@@ -3562,8 +3935,6 @@ hasown@^2.0.0, hasown@^2.0.2:
 
 highlight.js@^11.8.0:
   version "11.10.0"
-  resolved "https://registry.npmjs.org/highlight.js/-/highlight.js-11.10.0.tgz"
-  integrity sha512-SYVnVFswQER+zu1laSya563s+F8VDGt7o35d4utbamowvUNLLMovFqwCLSocpZTz3MgaSRA1IbqRWZv97dtErQ==
 
 hookable@^5.5.3:
   version "5.5.3"
@@ -3859,6 +4230,9 @@ jiti@^2.1.2:
 jiti@^2.3.1:
   version "2.3.3"
 
+jiti@^2.3.3:
+  version "2.3.3"
+
 js-string-escape@^1.0.1:
   version "1.0.1"
 
@@ -4045,12 +4419,23 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
+magic-regexp@^0.8.0:
+  version "0.8.0"
+  dependencies:
+    estree-walker "^3.0.3"
+    magic-string "^0.30.8"
+    mlly "^1.6.1"
+    regexp-tree "^0.1.27"
+    type-level-regexp "~0.1.17"
+    ufo "^1.4.0"
+    unplugin "^1.8.3"
+
 magic-string-ast@^0.6.2:
   version "0.6.2"
   dependencies:
     magic-string "^0.30.10"
 
-magic-string@^0.30.0, magic-string@^0.30.10, magic-string@^0.30.11, magic-string@^0.30.3, magic-string@^0.30.4, magic-string@^0.30.8:
+magic-string@^0.30.0, magic-string@^0.30.10, magic-string@^0.30.11, magic-string@^0.30.12, magic-string@^0.30.3, magic-string@^0.30.4, magic-string@^0.30.8:
   version "0.30.12"
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.5.0"
@@ -4096,6 +4481,9 @@ mdn-data@2.0.28:
 
 mdn-data@2.0.30:
   version "2.0.30"
+
+mdn-data@2.10.0:
+  version "2.10.0"
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -4174,8 +4562,6 @@ minimatch@^9.0.4:
 
 minimatch@^9.0.5:
   version "9.0.5"
-  resolved "https://registry.npmjs.org/minimatch/-/minimatch-9.0.5.tgz"
-  integrity sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow==
   dependencies:
     brace-expansion "^2.0.1"
 
@@ -4242,8 +4628,6 @@ mz@^2.7.0:
 
 naive-ui@^2.40.1:
   version "2.40.1"
-  resolved "https://registry.npmjs.org/naive-ui/-/naive-ui-2.40.1.tgz"
-  integrity sha512-3NkL+vLRQZKQxCHXa+7xiD6oM74OrQELaehDkGYRYpr6kjT+JJB+Z7h+5LC70gn8VkbgCAETv0+uRWF+6MLlgQ==
   dependencies:
     "@css-render/plugin-bem" "^0.15.14"
     "@css-render/vue3-ssr" "^0.15.14"
@@ -4364,7 +4748,7 @@ node-dir@^0.1.17:
 node-fetch-native@^1.6.3, node-fetch-native@^1.6.4:
   version "1.6.4"
 
-node-fetch@^2.0.0, node-fetch@^2.6.7:
+node-fetch@^2.0.0, node-fetch@^2.6.12, node-fetch@^2.6.7:
   version "2.7.0"
   dependencies:
     whatwg-url "^5.0.0"
@@ -4420,7 +4804,7 @@ nth-check@^2.0.1:
   dependencies:
     boolbase "^1.0.0"
 
-nuxi@^3.13.2:
+nuxi@^3.13.2, nuxi@^3.9.0:
   version "3.14.0"
 
 nuxt@^3.3.3:
@@ -4630,7 +5014,7 @@ package-json-from-dist@^1.0.0:
 package-manager-detector@^0.2.0:
   version "0.2.2"
 
-pako@~0.2.0:
+pako@^0.2.5, pako@~0.2.0:
   version "0.2.9"
 
 parse-git-config@^3.0.0:
@@ -4973,6 +5357,41 @@ pretty-format@^27.5.1:
 pretty-hrtime@^1.0.3:
   version "1.0.3"
 
+primeflex@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.npmjs.org/primeflex/-/primeflex-3.3.1.tgz"
+  integrity sha512-zaOq3YvcOYytbAmKv3zYc+0VNS9Wg5d37dfxZnveKBFPr7vEIwfV5ydrpiouTft8MVW6qNjfkaQphHSnvgQbpQ==
+
+primeicons@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmjs.org/primeicons/-/primeicons-6.0.1.tgz"
+  integrity sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==
+
+primeicons@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.npmjs.org/primeicons/-/primeicons-7.0.0.tgz"
+  integrity sha512-jK3Et9UzwzTsd6tzl2RmwrVY/b8raJ3QZLzoDACj+oTJ0oX7L9Hy+XnVwgo4QVKlKpnP/Ur13SXV/pVh4LzaDw==
+
+primevue@^3.36.0:
+  version "3.53.0"
+  resolved "https://registry.npmjs.org/primevue/-/primevue-3.53.0.tgz"
+  integrity sha512-mRqTPGGZX+3AQokaCCjxLVSNEjGEA7LaPdBT4qSpGEdMstK6vhUBCxgLH7IPjHudbaSi4Xo3CIO62pXQxbz8dQ==
+
+primevue@^3.52.0:
+  version "3.53.0"
+  resolved "https://registry.npmjs.org/primevue/-/primevue-3.53.0.tgz"
+  integrity sha512-mRqTPGGZX+3AQokaCCjxLVSNEjGEA7LaPdBT4qSpGEdMstK6vhUBCxgLH7IPjHudbaSi4Xo3CIO62pXQxbz8dQ==
+
+primevue@^4.1.1, primevue@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npmjs.org/primevue/-/primevue-4.1.1.tgz"
+  integrity sha512-FeJkv7FhfePfUBoApW0qAhid6Znq18VgbGFZdmhUcxvOD49Y2Eo/k2Yn7ypPhRbRApWiaSRN0v/2G1I4AMj3xg==
+  dependencies:
+    "@primeuix/styled" "^0.2.0"
+    "@primeuix/utils" "^0.2.0"
+    "@primevue/core" "4.1.1"
+    "@primevue/icons" "4.1.1"
+
 process-nextick-args@~2.0.0:
   version "2.0.1"
 
@@ -5215,6 +5634,9 @@ regenerator-transform@^0.15.2:
   dependencies:
     "@babel/runtime" "^7.8.4"
 
+regexp-tree@^0.1.27:
+  version "0.1.27"
+
 regexpu-core@^6.1.1:
   version "6.1.1"
   dependencies:
@@ -5239,7 +5661,7 @@ require-directory@^2.1.1:
 resolve-from@^5.0.0:
   version "5.0.0"
 
-resolve@^1.1.7, resolve@^1.10.0, resolve@^1.14.2, resolve@^1.22.1, resolve@^1.22.2:
+resolve@^1.1.7, resolve@^1.10.0, resolve@^1.14.2, resolve@^1.22.1, resolve@^1.22.2, resolve@^1.22.8:
   version "1.22.8"
   dependencies:
     is-core-module "^2.13.0"
@@ -5251,6 +5673,9 @@ restore-cursor@^3.1.0:
   dependencies:
     onetime "^5.1.0"
     signal-exit "^3.0.2"
+
+restructure@^3.0.0:
+  version "3.0.2"
 
 reusify@^1.0.4:
   version "1.0.4"
@@ -5342,8 +5767,6 @@ scule@^1.3.0:
 
 seemly@^0.3.6, seemly@^0.3.8:
   version "0.3.9"
-  resolved "https://registry.npmjs.org/seemly/-/seemly-0.3.9.tgz"
-  integrity sha512-bMLcaEqhIViiPbaumjLN8t1y+JpD/N8SiyYOyp0i0W6RgdyLWboIsUWAbZojF//JyerxPZR5Tgda+x3Pdne75A==
 
 semver@^5.6.0:
   version "5.7.2"
@@ -5456,6 +5879,13 @@ simple-git@^3.27.0:
 
 sirv@^2.0.2, sirv@^2.0.4:
   version "2.0.4"
+  dependencies:
+    "@polka/url" "^1.0.0-next.24"
+    mrmime "^2.0.0"
+    totalist "^3.0.0"
+
+sirv@^3.0.0:
+  version "3.0.0"
   dependencies:
     "@polka/url" "^1.0.0-next.24"
     mrmime "^2.0.0"
@@ -5661,7 +6091,7 @@ synchronous-promise@^2.0.15:
 system-architecture@^0.1.0:
   version "0.1.0"
 
-tailwindcss@^3.3.1:
+tailwindcss@^3.2.0, tailwindcss@^3.3.1:
   version "3.4.14"
   dependencies:
     "@alloc/quick-lru" "^5.2.0"
@@ -5783,13 +6213,16 @@ through2@^2.0.3:
 time-zone@^1.0.0:
   version "1.0.0"
 
+tiny-inflate@^1.0.0, tiny-inflate@^1.0.3:
+  version "1.0.3"
+
 tiny-invariant@^1.1.0, tiny-invariant@^1.3.1, tiny-invariant@^1.3.3:
   version "1.3.3"
 
 tinybench@^2.4.0:
   version "2.9.0"
 
-tinyglobby@^0.2.6:
+tinyglobby@^0.2.6, tinyglobby@^0.2.9:
   version "0.2.9"
   dependencies:
     fdir "^6.4.0"
@@ -5826,8 +6259,6 @@ tr46@~0.0.3:
 
 treemate@^0.3.11:
   version "0.3.11"
-  resolved "https://registry.npmjs.org/treemate/-/treemate-0.3.11.tgz"
-  integrity sha512-M8RGFoKtZ8dF+iwJfAJTOH/SM4KluKOKRJpjCMhI8bG3qB74zrFoArKZ62ll0Fr3mqkMJiQOmWYkdYgDeITYQg==
 
 ts-dedent@^2.0.0:
   version "2.2.0"
@@ -5868,13 +6299,16 @@ type-is@~1.6.18:
     media-typer "0.3.0"
     mime-types "~2.1.24"
 
+type-level-regexp@~0.1.17:
+  version "0.1.17"
+
 typedarray@^0.0.6:
   version "0.0.6"
 
 typescript@*, typescript@^5.0.4, typescript@>=4.4.4:
   version "5.6.3"
 
-ufo@^1.1.2, ufo@^1.5.3, ufo@^1.5.4:
+ufo@^1.1.2, ufo@^1.4.0, ufo@^1.5.3, ufo@^1.5.4:
   version "1.5.4"
 
 uglify-js@^3.1.4:
@@ -5934,11 +6368,29 @@ unicode-match-property-ecmascript@^2.0.0:
 unicode-match-property-value-ecmascript@^2.1.0:
   version "2.2.0"
 
+unicode-properties@^1.4.0:
+  version "1.4.1"
+  dependencies:
+    base64-js "^1.3.0"
+    unicode-trie "^2.0.0"
+
 unicode-property-aliases-ecmascript@^2.0.0:
   version "2.1.0"
 
+unicode-trie@^2.0.0:
+  version "2.0.0"
+  dependencies:
+    pako "^0.2.5"
+    tiny-inflate "^1.0.0"
+
 unicorn-magic@^0.1.0:
   version "0.1.0"
+
+unifont@^0.1.4:
+  version "0.1.4"
+  dependencies:
+    css-tree "^3.0.0"
+    ohash "^1.1.4"
 
 unimport@^3.12.0, unimport@^3.7.2:
   version "3.13.1"
@@ -5982,6 +6434,14 @@ unplugin-auto-import@^0.18.3:
     unimport "^3.12.0"
     unplugin "^1.14.1"
 
+unplugin-formkit@^0.2.7:
+  version "0.2.13"
+  resolved "https://registry.npmjs.org/unplugin-formkit/-/unplugin-formkit-0.2.13.tgz"
+  integrity sha512-qNHz7/0QDO0uVD5MoUZz49CI7q8cHM24RQDwbs5NfRJ6EiyZ1gBmWq9ta3QHR2nD7xacXV+yzmfDbnwlNpkzsg==
+  dependencies:
+    pathe "^1.1.1"
+    unplugin "^1.4.0"
+
 unplugin-vue-components@^0.27.4:
   version "0.27.4"
   resolved "https://registry.npmjs.org/unplugin-vue-components/-/unplugin-vue-components-0.27.4.tgz"
@@ -5997,6 +6457,20 @@ unplugin-vue-components@^0.27.4:
     minimatch "^9.0.5"
     mlly "^1.7.1"
     unplugin "^1.12.1"
+
+unplugin-vue-components@0.27.0:
+  version "0.27.0"
+  dependencies:
+    "@antfu/utils" "^0.7.7"
+    "@rollup/pluginutils" "^5.1.0"
+    chokidar "^3.6.0"
+    debug "^4.3.4"
+    fast-glob "^3.3.2"
+    local-pkg "^0.5.0"
+    magic-string "^0.30.10"
+    minimatch "^9.0.4"
+    resolve "^1.22.8"
+    unplugin "^1.10.1"
 
 unplugin-vue-router@^0.10.8:
   version "0.10.8"
@@ -6016,7 +6490,7 @@ unplugin-vue-router@^0.10.8:
     unplugin "^1.12.2"
     yaml "^2.5.0"
 
-unplugin@^1.10.0, unplugin@^1.12.1, unplugin@^1.12.2, unplugin@^1.14.1, unplugin@^1.3.1:
+unplugin@^1.10.0, unplugin@^1.10.1, unplugin@^1.12.1, unplugin@^1.12.2, unplugin@^1.14.1, unplugin@^1.3.1, unplugin@^1.4.0, unplugin@^1.8.3:
   version "1.14.1"
   dependencies:
     acorn "^8.12.1"
@@ -6067,7 +6541,7 @@ unwasm@^0.3.9:
     pkg-types "^1.0.3"
     unplugin "^1.10.0"
 
-update-browserslist-db@^1.1.0:
+update-browserslist-db@^1.1.1:
   version "1.1.1"
   dependencies:
     escalade "^3.2.0"
@@ -6112,8 +6586,6 @@ vary@~1.1.2:
 
 vdirs@^0.1.4, vdirs@^0.1.8:
   version "0.1.8"
-  resolved "https://registry.npmjs.org/vdirs/-/vdirs-0.1.8.tgz"
-  integrity sha512-H9V1zGRLQZg9b+GdMk8MXDN2Lva0zx72MPahDKc30v+DtwKjfyOSXWRIX4t2mhDubM1H09gPhWeth/BJWPHGUw==
   dependencies:
     evtd "^0.2.2"
 
@@ -6238,8 +6710,6 @@ vitest@^0.30.1, "vitest@>=0.30.0 <1":
 
 vooks@^0.2.12, vooks@^0.2.4:
   version "0.2.12"
-  resolved "https://registry.npmjs.org/vooks/-/vooks-0.2.12.tgz"
-  integrity sha512-iox0I3RZzxtKlcgYaStQYKEzWWGAduMmq+jS7OrNdQo1FgGfPMubGL3uGHOU9n97NIvfFDBGnpSvkWyb/NSn/Q==
   dependencies:
     evtd "^0.2.2"
 
@@ -6301,7 +6771,10 @@ vue-tg@^0.8.0:
   dependencies:
     "@types/telegram-web-app" "^7"
 
-"vue@^2.6.14 || ^3.3.0", "vue@^2.7.0 || ^3.2.25", vue@^3, vue@^3.0.0, "vue@^3.0.0-0 || ^2.6.0", vue@^3.0.11, vue@^3.2.0, vue@^3.2.25, vue@^3.3.4, vue@^3.5.5, "vue@>=2.7 || >=3", "vue@2 || 3", vue@3.5.12:
+vue-the-mask@^0.11.1:
+  version "0.11.1"
+
+"vue@^2.6.14 || ^3.3.0", "vue@^2.7.0 || ^3.2.25", vue@^3, vue@^3.0.0, "vue@^3.0.0-0 || ^2.6.0", vue@^3.0.11, vue@^3.2.0, vue@^3.2.25, vue@^3.3.4, vue@^3.4.0, vue@^3.5.5, "vue@>=2.7 || >=3", "vue@2 || 3", vue@3.5.12:
   version "3.5.12"
   dependencies:
     "@vue/compiler-dom" "3.5.12"
@@ -6312,8 +6785,6 @@ vue-tg@^0.8.0:
 
 vueuc@^0.4.63, vueuc@^0.4.64:
   version "0.4.64"
-  resolved "https://registry.npmjs.org/vueuc/-/vueuc-0.4.64.tgz"
-  integrity sha512-wlJQj7fIwKK2pOEoOq4Aro8JdPOGpX8aWQhV8YkTW9OgWD2uj2O8ANzvSsIGjx7LTOc7QbS7sXdxHi6XvRnHPA==
   dependencies:
     "@css-render/vue3-ssr" "^0.15.10"
     "@juggle/resize-observer" "^3.3.1"
