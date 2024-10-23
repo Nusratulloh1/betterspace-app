@@ -9,7 +9,7 @@
           v-model="form.phone"
           mask="(99) 999-9999"
           @blur="validateForm"
-          placeholder="Enter your phone number"
+          placeholder="Enter your phone: (99) 999-9999"
           :class="{ 'p-invalid': errors.phone }"
         />
         <small v-show="errors.phone !== ''" class="p-error">{{

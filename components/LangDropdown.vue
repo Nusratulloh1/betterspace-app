@@ -22,7 +22,7 @@
             v-for="option in options"
             :key="option.key"
             @click="handleSelect(option.key)"
-            class="flex items-center gap-2 p-2 cursor-pointer hover:bg-gray-200"
+            class="flex items-center gap-2 p-2 cursor-pointer hover:bg-gray-200 text-black"
           >
             <img :src="option.icon" alt="language" class="icon" />
             <span>{{ option.label }}</span>

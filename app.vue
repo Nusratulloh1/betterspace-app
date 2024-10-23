@@ -1,12 +1,20 @@
 <template>
-  <div class="mx-auto w-full max-w-xl bg-white">
-    <!-- {{ useTgWebAppStore().userData }}
-    {{ useTgWebAppStore().initDataUnsafe }} -->
-    <n-config-provider :theme-overrides="themeOverrides">
-      <n-scrollbar style="max-height: 100vh">
+  <div class="mx-auto w-full max-w-xl !bg-black">
+    <ScrollPanel
+      style="width: 100%; height: 100vh"
+      :dt="{
+        bar: {
+          background: 'transparent',
+        },
+      }"
+    >
+      <!-- <h4 class="text-black">
+        {{ useTgWebAppStore().webAppData?.version }}
+      </h4> -->
+      <NuxtLayout>
         <NuxtPage />
-      </n-scrollbar>
-    </n-config-provider>
+      </NuxtLayout>
+    </ScrollPanel>
     <ClosingConfirmation />
     <!-- <ExpandedViewport /> -->
   </div>
@@ -16,18 +24,4 @@ import { ClosingConfirmation } from "vue-tg";
 import { useTgWebAppStore } from "./store/tgWebApp";
 import Loading from "~/components/Loading.vue";
 useTgWebAppStore().init();
-
-const themeOverrides = {
-  common: {
-    primaryColor: "#000000",
-    errorColor: "#F44336",
-    successColor: "#19c665",
-  },
-  Input: {},
-  Scrollbar: {
-    width: "0px",
-    railInsetHorizontal: "4px 4px 4px auto",
-    borderRadius: 0,
-  },
-};
 </script>

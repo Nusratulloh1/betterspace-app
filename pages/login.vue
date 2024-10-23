@@ -66,7 +66,11 @@ const options: DropdownOption[] = [
 const currentStep = ref(1);
 // Current selected language
 const currentLang = ref(options[0]);
-onMounted(() => {});
+onMounted(() => {
+  if (userStore.isLoggedIn) {
+    navigateTo("/");
+  }
+});
 // Handle language selection
 const handleSelect = (key: string) => {
   const selectedLang = options.find((option) => option.key === key);

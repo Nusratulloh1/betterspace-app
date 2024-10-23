@@ -5,10 +5,10 @@
       <div class="flex flex-col pb-10">
         <label class="mb-1" for="password">Password</label>
         <Password v-model="form.password" toggleMask @blur="validatePassword">
-          <template #header>
+          <!-- <template #header>
             <div class="font-semibold text-xm mb-4">Pick a password</div>
-          </template>
-          <template #footer>
+          </template> -->
+          <!-- <template #footer>
             <Divider />
             <ul class="pl-2 ml-2 my-0 leading-normal">
               <li>At least one lowercase letter</li>
@@ -16,7 +16,7 @@
               <li>At least one number</li>
               <li>Minimum 8 characters</li>
             </ul>
-          </template>
+          </template> -->
         </Password>
         <small v-if="errors.password" class="p-error">{{
           errors.password

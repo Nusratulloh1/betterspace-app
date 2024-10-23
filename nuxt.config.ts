@@ -1,8 +1,6 @@
-import AutoImport from 'unplugin-auto-import/vite'
 import Aura from '@primevue/themes/aura';
 import Components from 'unplugin-vue-components/vite';
 import { PrimeVueResolver } from 'unplugin-vue-components/resolvers';
-import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
@@ -47,11 +45,8 @@ export default defineNuxtConfig({
   plugins: ['~/plugins/vue-the-mask.ts'],
   vite: {
     plugins: [
-      AutoImport({
-        resolvers: [NaiveUiResolver()],
-      }),
       Components({
-        resolvers: [NaiveUiResolver(), PrimeVueResolver()],
+        resolvers: [PrimeVueResolver()],
       }),
     ],
   },

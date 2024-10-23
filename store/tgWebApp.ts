@@ -5,7 +5,8 @@ import {
     useWebAppCloudStorage,
     useWebAppPopup,
     useWebAppViewport,
-    useWebAppTheme
+    useWebAppTheme,
+    useWebAppQrScanner
 } from 'vue-tg'
 
 export const useTgWebAppStore = defineStore('tgWebAppStore', {
@@ -16,7 +17,7 @@ export const useTgWebAppStore = defineStore('tgWebAppStore', {
         geo: any,
         theme: any,
         viewport: any,
-
+        qrResult: any,
         order: [],
     } => ({
         webAppData: null,
@@ -25,7 +26,7 @@ export const useTgWebAppStore = defineStore('tgWebAppStore', {
         geo: null,
         theme: null,
         viewport: null,
-
+        qrResult: null,
         order: [],
     }),
 
@@ -122,5 +123,19 @@ export const useTgWebAppStore = defineStore('tgWebAppStore', {
                 }
             })
         },
+        closeScan(value: string) {
+            const { closeScanQrPopup } = useWebAppQrScanner()
+            useWebAppPopup().showConfirm(value, (ok) => {
+                if (ok) {
+                    this.qrResult = null
+                    this.qrResult = value
+                    closeScanQrPopup()
+                } else {
+                    this.qrResult = null
+                }
+            })
+
+
+        }
     }
 })

@@ -1,12 +1,129 @@
-<script setup lang="ts">
-definePageMeta({
-  middleware: 'auth',
-});
-</script>
+
 
 <template>
-  <div>
-    <h1>Protected Page</h1>
-    <!-- Your page content here -->
+  <div class="main">
+    <h5 class="title !text-center">
+      What would you like to <br />
+      focus on?
+    </h5>
+    <InputGroup class="mt-6 !rounded-2xl">
+      <InputText
+        size="large"
+        class="!bg-[#FFFFFF] !border-none"
+        placeholder="Search for nutrition, gym, gift and etc..."
+        v-model="value1"
+        @keyup.enter="submitSearch"
+      />
+      <Button
+        @click="submitSearch"
+        class="!bg-[#FFFFFF] text-[#B2B5B8] !border-none"
+        icon="pi pi-search"
+      />
+    </InputGroup>
+    <div class="flex">
+      <Button
+        class="!bg-[#FFFFFF] !shadow-sm !mx-auto mt-6 !text-[#6D6D6D] !rounded-[12px]"
+        text
+        label="Don’t find anything to focus on?"
+      >
+        <template #icon>
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 26 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.7122 5.45231L13.3017 4.86205C13.3017 4.86202 13.3018 4.862 13.3018 4.86198C13.8545 4.30656 14.5118 3.86623 15.2357 3.56645C15.9596 3.26668 16.7358 3.11341 17.5193 3.1155M12.7122 5.45231L1.94241 9.07862C1.94242 11.97 3.74324 14.9408 7.21151 17.9087L7.21182 17.9089C8.80286 19.2647 10.5215 20.4631 12.3436 21.4875L12.3436 21.4875L12.3469 21.4893C12.4592 21.5496 12.5847 21.5812 12.7122 21.5812C12.8397 21.5812 12.9652 21.5496 13.0776 21.4893L13.0776 21.4893L13.0808 21.4875C14.903 20.4631 16.6216 19.2647 18.2126 17.9089L18.2129 17.9087C21.6812 14.9408 23.482 11.97 23.482 9.0786V9.07837C23.4802 7.49748 22.8514 5.98187 21.7335 4.86402C20.6157 3.7462 19.1001 3.11738 17.5193 3.1155M12.7122 5.45231L12.1225 4.8618L12.1224 4.86172C11.2885 4.02762 10.2259 3.45957 9.06905 3.22943C7.91223 2.99928 6.71314 3.11737 5.62343 3.56876C4.53373 4.02015 3.60237 4.78457 2.94715 5.76533C2.29193 6.74608 1.94228 7.89911 1.94241 9.0786L12.7122 5.45231ZM17.5193 3.1155C17.5193 3.1155 17.5192 3.1155 17.5192 3.1155L17.5189 3.31054L17.5195 3.1155C17.5194 3.1155 17.5194 3.1155 17.5193 3.1155ZM12.9844 10.984L11.3976 12.5707L11.3975 12.5706L11.3928 12.5757C11.2565 12.722 11.1823 12.9155 11.1858 13.1155C11.1893 13.3154 11.2703 13.5062 11.4118 13.6476C11.5532 13.789 11.744 13.87 11.9439 13.8736C12.1439 13.8771 12.3374 13.8029 12.4837 13.6665L12.4838 13.6666L12.4886 13.6618L14.6218 11.5296C14.6218 11.5296 14.6218 11.5295 14.6219 11.5295C14.6936 11.4579 14.7505 11.3727 14.7894 11.2791C14.8282 11.1854 14.8482 11.0849 14.8482 10.9835C14.8482 10.8821 14.8282 10.7816 14.7894 10.6879C14.7505 10.5942 14.6936 10.5091 14.6218 10.4374L12.2661 8.08168L14.3941 5.95371C15.0121 5.33569 15.7996 4.91482 16.6568 4.74431C17.5141 4.5738 18.4026 4.66132 19.2101 4.9958C20.0177 5.33028 20.7079 5.89669 21.1935 6.62342C21.6791 7.35015 21.9383 8.20456 21.9383 9.07861C21.9383 11.6682 20.0353 14.157 17.8824 16.1353C15.8222 18.0285 13.5786 19.4132 12.7122 19.9191C11.8458 19.4132 9.6022 18.0285 7.54203 16.1353C5.38912 14.157 3.48611 11.6682 3.4861 9.07861L12.9844 10.984ZM12.9844 10.984L10.6286 8.62824C10.5569 8.55656 10.4999 8.47144 10.4611 8.37773C10.4222 8.28403 10.4023 8.1836 10.4023 8.08216C10.4023 7.98073 10.4222 7.88029 10.4611 7.78659C10.4999 7.69292 10.5568 7.60782 10.6286 7.53615L10.6285 7.53622L10.7665 7.67407L10.6286 7.53608L12.9844 10.984ZM11.6203 6.54359L11.7581 6.68145L11.8953 6.54423L11.896 6.54353L11.7581 6.40568L11.6203 6.54359Z"
+              fill="#6D6D6D"
+              stroke="#6D6D6D"
+              stroke-width="0.390077"
+            />
+          </svg>
+        </template>
+      </Button>
+    </div>
+    <div class="grid grid-cols-1 gap-10 mt-12 pb-10">
+      <div class="merchantCard" v-for="i in 6" :key="i">
+        <div class="picture"></div>
+        <div class="content">
+          <h6>Everything</h6>
+          <p>Target every aspect of your wellbeing to feel happier</p>
+          <div class="boxes">
+            <div class="box" v-for="i in 6" :key="i"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+<script setup lang="ts">
+definePageMeta({
+  middleware: "auth",
+  layout: "main",
+});
+
+const submitSearch = () => {
+  navigateTo(`/merchants?merchant=${value1.value}`);
+};
+
+const value1 = ref("");
+</script>
+<style lang="scss" >
+.main {
+  .p-inputtext {
+    color: black;
+    font-size: 14px;
+    &::placeholder {
+      color: #b2b5b8 !important;
+      font-size: 14px;
+    }
+  }
+  .p-button-icon {
+    color: #b2b5b8 !important;
+  }
+}
+.merchantCard {
+  box-shadow: 0px 0px 32.78px 0px #0000000a;
+  background: #ffffff;
+  border-radius: 22px;
+  width: 100%;
+  overflow: hidden;
+  .picture {
+    background: #bbbec2;
+    width: 100%;
+    height: 130px;
+  }
+  .content {
+    padding: 22px 16px;
+    h6 {
+      font-family: "Roboto";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 16px;
+      color: #0a0f16;
+    }
+    p {
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17px;
+      color: #a7a7a7;
+      margin-top: 6px;
+    }
+    .boxes {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 24px;
+      .box {
+        border: 1.46px solid #e4e4e4;
+        width: 35.85px;
+        height: 35.85px;
+        border-radius: 12px;
+      }
+    }
+  }
+}
+</style>
