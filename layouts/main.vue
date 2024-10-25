@@ -38,7 +38,7 @@
           class="bg-black flex flex-col justify-center items-center gap-0.5 py-1.5 px-4 rounded-xl"
         >
           <small class="text-[#909090]">Saved</small>
-          <strong class="!font-semibold text-sm"> $15,000 </strong>
+          <strong class="!font-semibold text-sm text-white"> $15,000 </strong>
         </div>
       </nav>
       <button
