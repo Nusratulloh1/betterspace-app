@@ -101,9 +101,8 @@ const handleSubmit = () => {
   margin-top: 4px;
 }
 
-/* Validation colors */
 .text-danger {
-  color: rgb(194, 19, 19);
+  color: red;
 }
 
 .text-success {

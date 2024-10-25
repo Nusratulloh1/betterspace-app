@@ -15,10 +15,10 @@
           {{ tgStore.webAppData.initDataUnsafe.user?.last_name }}
         </h4>
       </header>
-      <div v-if="currentStep === 2">
+      <div v-if="currentStep === 1">
         <PhoneForm @next="currentStep = 2" @share="phoneShare" />
       </div>
-      <div v-else-if="currentStep == 1">
+      <div v-else-if="currentStep == 2">
         <PasswordForm @next="submitForm" />
       </div>
     </template>
