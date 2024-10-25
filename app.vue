@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto w-full max-w-xl !bg-black">
+  <div class="mx-auto w-full max-w-xl">
     <ScrollPanel
       style="width: 100%; height: 100vh"
       :dt="{

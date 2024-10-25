@@ -1,5 +1,5 @@
 <template>
-  <div class="container !px-11 !pt-6 auth">
+  <div class="container !px-9 !pt-6 auth">
     <boarding v-if="currentStep == 3" />
     <template v-else>
       <header>
@@ -15,16 +15,10 @@
           {{ tgStore.webAppData.initDataUnsafe.user?.last_name }}
         </h4>
       </header>
-      <div v-if="currentStep === 1">
-        <PhoneForm @next="currentStep = 2" />
-        <Button
-          @click="phoneShare"
-          class="mt-2 float-right"
-          label="Share number"
-          link
-        />
+      <div v-if="currentStep === 2">
+        <PhoneForm @next="currentStep = 2" @share="phoneShare" />
       </div>
-      <div v-else-if="currentStep == 2">
+      <div v-else-if="currentStep == 1">
         <PasswordForm @next="submitForm" />
       </div>
     </template>

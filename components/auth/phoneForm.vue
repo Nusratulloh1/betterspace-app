@@ -4,14 +4,27 @@
     <form @submit.prevent="handleSubmit" novalidate class="!mt-28">
       <div class="flex flex-col">
         <label class="mb-1" for="phone">Phone Number</label>
-        <InputMask
-          id="phone"
-          v-model="form.phone"
-          mask="(99) 999-9999"
-          @blur="validateForm"
-          placeholder="Enter your phone: (99) 999-9999"
-          :class="{ 'p-invalid': errors.phone }"
-        />
+        <div class="flex">
+          <InputGroup class="!rounded-lg flex !items-center">
+            <small class="text-black text-base h-6 mr-2"> +998 </small>
+            <InputMask
+              id="phone"
+              v-model="form.phone"
+              mask="(99) 999-9999"
+              @blur="validateForm"
+              placeholder="Enter your phone number"
+              class="!rounded-l-2xl"
+              :class="{ 'p-invalid': errors.phone }"
+            />
+            <Button
+              @click="emit('share')"
+              class="!rounded-2xl !text-white !ml-[-20px] !h-14 !bg-black !border-black"
+              severity="primary"
+            >
+              Share
+            </Button>
+          </InputGroup>
+        </div>
         <small v-show="errors.phone !== ''" class="p-error">{{
           errors.phone
         }}</small>
@@ -36,7 +49,7 @@ import { MainButton } from "vue-tg";
 const form = ref({
   phone: "",
 });
-const emit = defineEmits(["next"]);
+const emit = defineEmits(["next", "share"]);
 const errors = ref({
   phone: "",
 });
