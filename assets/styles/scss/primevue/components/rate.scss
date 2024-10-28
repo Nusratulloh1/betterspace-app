@@ -1,0 +1,12 @@
+.p-rating{
+   gap: 10px !important;
+    &.large{
+        gap: 18px !important;
+        .p-rating-option{
+            .p-rating-icon{
+                width: 20px !important;
+                height: 20px !important;
+            }
+        }
+    }
+}

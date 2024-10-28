@@ -1,29 +1,17 @@
 <template>
   <div>
-    <header>
-      <nav class="flex items-center justify-between">
-        <LogoIcon class="w-full max-w-[156px]" />
-      </nav>
-    </header>
-    <section>
-      <h4 class="title">Last step! Tell us what you’re interested in</h4>
-      <div class="grid gap-8 mt-10 pb-10">
-        <div
-          class="card transition-all"
-          :class="{ selected: item.selected }"
-          v-for="item in items"
-          :key="item.val"
-          @click="item.selected = !item.selected"
-        >
-          <h5>Nutrition</h5>
-          <p>Eating a healthy, balanced diet gives you more energy</p>
-        </div>
+    <h4 class="title">Last step! Tell us what you’re interested in</h4>
+    <div class="grid gap-8 mt-10 pb-10">
+      <div class="card transition-all" :class="{ selected: item.selected }" v-for="item in items" :key="item.val"
+        @click="item.selected = !item.selected">
+        <h5>Nutrition</h5>
+        <p>Eating a healthy, balanced diet gives you more energy</p>
       </div>
-    </section>
+    </div>
     <MainButton @click="handleSubmit" color="#000000" text="Finish" />
   </div>
 </template>
-  <script lang="ts" setup>
+<script lang="ts" setup>
 import { MainButton } from "vue-tg";
 import { ref } from "vue";
 import { useUserStore } from "~/store/user";
@@ -64,16 +52,18 @@ const handleSubmit = () => {
   navigateTo("/");
 };
 </script>
-  <style lang="scss">
+<style lang="scss" scoped>
 .card {
   width: 100%;
   border-radius: 20.75px;
   background: #ffffff;
   box-shadow: 0px 0px 31.08px 0px #0000000a;
   padding: 20px;
+
   &.selected {
     border: 2px solid #0a0f16;
   }
+
   h5 {
     font-family: Roboto;
     font-size: 20px;
@@ -81,6 +71,7 @@ const handleSubmit = () => {
     line-height: 32.59px;
     color: #0a0f16;
   }
+
   p {
     margin-top: 14px;
     font-family: Roboto;

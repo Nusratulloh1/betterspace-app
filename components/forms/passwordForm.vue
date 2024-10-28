@@ -4,13 +4,7 @@
     <form @submit.prevent="handleSubmit" novalidate class="!mt-24">
       <div class="flex flex-col pb-10">
         <label class="mb-1" for="password">Password</label>
-        <Password
-          v-model="form.password"
-          toggleMask
-          @input="handleInput"
-          @blur="validatePassword"
-        >
-          <!-- Password input component -->
+        <Password v-model="form.password" toggleMask :feedback="false" @input="handleInput" @blur="validatePassword">
         </Password>
         <div class="mt-4">
           <p :class="minLengthClass" class="text-sm">Minimum 8 digits</p>
@@ -20,20 +14,14 @@
         </div>
       </div>
 
-      <MainButton
-        class="!mt-20"
-        @click="handleSubmit"
-        color="#000000"
-        text="Sign Up"
-      />
+      <MainButton class="!mt-20" @click="handleSubmit" color="#000000" text="Sign Up" />
     </form>
   </div>
 </template>
-    
-  <script setup lang="ts">
+
+<script setup lang="ts">
 import { ref, computed } from "vue";
 import Password from "primevue/password";
-import Divider from "primevue/divider";
 import { MainButton } from "vue-tg";
 
 // Form state
@@ -81,8 +69,8 @@ const handleSubmit = () => {
   }
 };
 </script>
-    
-  <style lang="scss">
+
+<style lang="scss">
 .phone-form {
   max-width: 400px;
   margin: 0 auto;
@@ -113,4 +101,3 @@ const handleSubmit = () => {
   color: #7d7d7d;
 }
 </style>
-  

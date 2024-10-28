@@ -1,5 +1,5 @@
 @import './tailwind.scss';
-
+@import './primevue/index.scss';
 
 * {
     margin: 0;
@@ -109,15 +109,4 @@ body,
             }
         }
     }
-}
-
-/* Import PrimeVue theme */
-// @import 'primevue/resources/themes/saga-blue/theme.css';
-
-/* Override primary color */
-:root {
-    --p-primary-color: #212529;
-    /* Replace with your desired primary color */
-    --primary-color-text: #ffffff;
-    /* Text color on primary elements */
 }

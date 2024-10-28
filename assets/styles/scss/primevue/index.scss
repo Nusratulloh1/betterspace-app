@@ -1,0 +1,13 @@
+@import './components/modal.scss';
+@import './components/rate.scss';
+@import './components/button.scss';
+:root{
+    --p-rating-icon-color: #000000 !important;
+    --p-primary-color:  #000000;
+    --primary-color-text: #ffffff;
+    --p-button-border-radius: 14px !important;
+    --p-button-primary-hover-background: #212529 !important;
+    --p-button-primary-active-background: #212529 !important;
+    --p-button-primary-active-border-color: #212529 !important;
+    --p-button-primary-hover-border-color: #212529 !important;
+}
