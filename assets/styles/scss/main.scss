@@ -1,5 +1,5 @@
-@import './tailwind.scss';
-
+@use './tailwind.scss' as *;
+@use './primevue/index.scss' as *;
 
 * {
     margin: 0;
@@ -27,6 +27,7 @@ body,
     overflow: hidden;
     position: relative;
     background: #F7F7F7;
+    color: #000000;
 }
 
 ::-webkit-scrollbar {
@@ -109,15 +110,4 @@ body,
             }
         }
     }
-}
-
-/* Import PrimeVue theme */
-// @import 'primevue/resources/themes/saga-blue/theme.css';
-
-/* Override primary color */
-:root {
-    --p-primary-color: #212529;
-    /* Replace with your desired primary color */
-    --primary-color-text: #ffffff;
-    /* Text color on primary elements */
 }

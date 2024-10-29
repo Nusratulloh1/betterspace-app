@@ -7,20 +7,9 @@
         <div class="flex">
           <InputGroup class="!rounded-lg flex !items-center">
             <small class="text-black text-base h-6 mr-2"> +998 </small>
-            <InputMask
-              id="phone"
-              v-model="form.phone"
-              mask="(99) 999-9999"
-              @blur="validateForm"
-              placeholder="Enter your phone number"
-              class="!rounded-l-2xl"
-              :class="{ 'p-invalid': errors.phone }"
-            />
-            <Button
-              @click="emit('share')"
-              class="!rounded-2xl !text-white !ml-[-20px] !h-14 !bg-black !border-black"
-              severity="primary"
-            >
+            <InputMask id="phone" v-model="form.phone" mask="(99) 999-9999" @blur="validateForm"
+              placeholder="Enter your phone number" class="!rounded-l-2xl" :class="{ 'p-invalid': errors.phone }" />
+            <Button @click="emit('share')" class="!rounded-2xl z-[9999]  !ml-[-20px] !h-14 " rounded>
               Share
             </Button>
           </InputGroup>
@@ -30,17 +19,12 @@
         }}</small>
       </div>
 
-      <MainButton
-        class="!mt-20"
-        @click="handleSubmit"
-        color="#000000"
-        text="Sign Up"
-      />
+      <MainButton class="!mt-20" @click="handleSubmit" color="#000000" text="Sign Up" />
     </form>
   </div>
 </template>
-  
-  <script setup lang="ts">
+
+<script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import InputMask from "primevue/inputmask";
@@ -76,8 +60,8 @@ const handleSubmit = () => {
   }
 };
 </script>
-  
-  <style lang="scss">
+
+<style lang="scss">
 .phone-form {
   max-width: 400px;
   margin: 0 auto;
@@ -96,4 +80,3 @@ const handleSubmit = () => {
   margin-top: 4px;
 }
 </style>
-  

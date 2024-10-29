@@ -8,11 +8,13 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Button: typeof import('primevue/button')['default']
+    Dialog: typeof import('primevue/dialog')['default']
     InputGroup: typeof import('primevue/inputgroup')['default']
     InputText: typeof import('primevue/inputtext')['default']
     Rating: typeof import('primevue/rating')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ScrollPanel: typeof import('primevue/scrollpanel')['default']
+    Textarea: typeof import('primevue/textarea')['default']
   }
 }

@@ -1,0 +1,23 @@
+@use './components/modal.scss' as *;
+@use './components/rate.scss' as *;
+;
+@use './components/button.scss' as *;
+;
+
+:root {
+    --p-rating-icon-color: #000000 !important;
+    --p-primary-color: #000000 !important;
+    --primary-color-text: #ffffff !important;
+    --p-button-primary-color: #ffffff !important;
+    --p-button-border-radius: 14px !important;
+    --p-button-primary-hover-background: #212529 !important;
+    --p-button-primary-active-background: #212529 !important;
+    --p-button-primary-active-border-color: #212529 !important;
+    --p-button-primary-hover-border-color: #212529 !important;
+    --p-dialog-background: #ffffff !important;
+    --p-textarea-background: #ffffff !important;
+    --p-form-field-border-color: #C3C3C3 !important;
+    --p-form-field-color: #000000 !important;
+    // --p-overlay-select-background: #ffffff !important;
+    // --p-overlay-select-color: #000000 !important;
+}

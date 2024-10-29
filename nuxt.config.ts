@@ -34,13 +34,20 @@ export default defineNuxtConfig({
     "primeicons/primeicons.css",
     '~/assets/styles/scss/main.scss' // custom styles, if any
   ],
-  modules: ['@pinia/nuxt', '@nuxt/fonts', '@primevue/nuxt-module'],
+  modules: ['@pinia/nuxt', '@nuxt/fonts', '@primevue/nuxt-module', 'nuxt-svgo'],
   primevue: {
     options: {
       theme: {
         preset: Aura,
+        options: {
+          darkModeSelector: false || 'none',
+        }
       },
     }
+  },
+  svgo: {
+    autoImportPath: '~/assets/images/svgs/',
+    // componentPrefix: 'i',
   },
   plugins: ['~/plugins/vue-the-mask.ts'],
   vite: {

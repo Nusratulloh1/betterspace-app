@@ -4,30 +4,40 @@
       {{ currentMerchant }}
     </h3>
     <div class="flex items-center gap-3 mt-6">
-      <Select v-model="selected1" :options="values1" optionLabel="name" rounded size="large" placeholder="Filters"
-        class="w-full md:w-56 !bg-[#0000000D] !border-none !text-[#191a1c] !rounded-full">
+      <Select
+        v-model="selected1"
+        :options="values1"
+        optionLabel="name"
+        rounded
+        size="large"
+        placeholder="Filters"
+        class="w-full md:w-56 !bg-[#0000000D] !border-none !text-[#191a1c] !rounded-full"
+      >
         <template #dropdownicon>
-          <svg width="14" height="8" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M9.45099 15.4411H14.3529V12.9902H9.45099V15.4411ZM0.872559 0.73526V3.18624H22.9314V0.73526H0.872559ZM4.54903 9.31369H19.2549V6.86271H4.54903V9.31369Z"
-              fill="black" />
-          </svg>
+          <SvgoIconFilter class="!w-3 !h-2.5" color="#191a1c" />
         </template>
       </Select>
-      <Select v-model="selected2" :options="values2" optionLabel="name" rounded size="large"
+      <Select
+        v-model="selected2"
+        :options="values2"
+        optionLabel="name"
+        rounded
+        size="large"
         placeholder="Sort By: Newest First"
-        class="w-full md:w-56 !bg-[#0000000D] !border-none !text-[#191a1c] !rounded-full">
+        class="w-full md:w-56 !bg-[#0000000D] !border-none !text-[#191a1c] !rounded-full"
+      >
         <template #dropdownicon>
-          <svg width="12" height="6" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M2.63981 0.909088L8.26481 6.52183L13.8898 0.909088L15.6177 2.63703L8.26481 9.98997L0.911865 2.63703L2.63981 0.909088Z"
-              fill="black" />
-          </svg>
+          <SvgoIconArrow class="!w-3 !h-2.5" color="#191a1c" />
         </template>
       </Select>
     </div>
     <div class="grid grid-cols-1 gap-10 mt-8 pb-10">
-      <div class="merchantCard" v-for="i in 6" :key="i" @click="navigateTo(`/merchants/${i}`)">
+      <div
+        class="merchantCard"
+        v-for="i in 6"
+        :key="i"
+        @click="navigateTo(`/merchants/${i}`)"
+      >
         <div class="picture relative">
           <div class="discount absolute top-4 right-4">20%</div>
         </div>

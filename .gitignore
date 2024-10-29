@@ -9,7 +9,6 @@ nuxt.d.ts
 
 # compiled output
 /dist
-/storybook-static
 /node_modules
 
 # Logs
