@@ -28,7 +28,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+import { useI18n } from "vue-i18n";
 import eng from "~/assets/images/lang/eng.png";
 import rus from "~/assets/images/lang/rus.png";
 
@@ -37,17 +38,17 @@ type DropdownOption = {
   key: string;
   icon: string;
 };
-
+const { locale } = useI18n();
 const options: DropdownOption[] = [
   {
-    label: "English",
-    key: "eng",
-    icon: eng,
+    label: "Русский",
+    key: "ru",
+    icon: rus,
   },
   {
-    label: "Русский",
-    key: "rus",
-    icon: rus,
+    label: "English",
+    key: "en",
+    icon: eng,
   },
 ];
 
@@ -59,13 +60,20 @@ const toggleDropdown = () => {
 };
 
 const handleSelect = (key: string) => {
-  const selectedLang = options.find((option) => option.key === key);
+  const selectedLang: DropdownOption | undefined = options.find(
+    (option) => option.key === key
+  );
   if (selectedLang) {
     currentLang.value = selectedLang;
-    console.log("Language changed to:", selectedLang);
+    localStorage.setItem("lang", selectedLang.key);
     isOpen.value = false;
+    window.location.reload();
   }
 };
+onMounted(() => {
+  const index = options.findIndex((x: DropdownOption) => x.key == locale.value);
+  currentLang.value = options[index];
+});
 </script>
 
 <style lang="scss" scoped>

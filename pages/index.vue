@@ -1,14 +1,13 @@
 <template>
   <div class="main">
     <h5 class="title !text-center">
-      What would you like to <br />
-      focus on?
+      {{ t("main.focus_on") }}
     </h5>
     <InputGroup class="mt-6 !rounded-2xl">
       <InputText
         size="large"
         class="!bg-[#FFFFFF] !border-none"
-        placeholder="Search for nutrition, gym, gift and etc..."
+        :placeholder="t(`main.search_for_nutrition`)"
         v-model="value1"
         @keyup.enter="submitSearch"
       />
@@ -23,7 +22,7 @@
         @click="feedbackModal = true"
         class="!bg-[#FFFFFF] !shadow-sm !mx-auto mt-6 !text-[#6D6D6D] !rounded-[12px]"
         text
-        label="Don’t find anything to focus on?"
+        :label="t(`main.not_find_anything`)"
       >
         <template #icon>
           <SvgoIconHeart class="!w-5 !h-5" />
@@ -34,8 +33,8 @@
       <div class="merchantCard" v-for="i in 6" :key="i">
         <div class="picture"></div>
         <div class="content">
-          <h6>Everything</h6>
-          <p>Target every aspect of your wellbeing to feel happier</p>
+          <h6>{{ t(`main.everything`) }}</h6>
+          <p>{{ t(`main.target_every_aspect`) }}</p>
           <div class="boxes">
             <div class="box" v-for="i in 6" :key="i"></div>
           </div>
@@ -54,6 +53,8 @@
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 import feedbackForm from "~/components/forms/feedbackForm.vue";
 definePageMeta({
   middleware: "auth",

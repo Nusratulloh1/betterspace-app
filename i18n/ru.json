@@ -1,1 +1,63 @@
-{}
+{
+    "auth": {
+        "experience_new_way_of_benefits": "ИСПЫТАЙТЕ НОВЫЙ СПОСОБ КОРПОРАТИВНЫХ ПРЕИМУЩЕСТВ",
+        "phone_number": "Номер телефона",
+        "enter_your_phone_number": "Введите свой номер телефона",
+        "share": "Поделиться",
+        "sign_in": "Войти",
+        "create_your_password": "Создайте пароль",
+        "new_password": "Новый пароль",
+        "show": "Показать",
+        "enter_password_for_benefits": "Введите пароль, чтобы попробовать новый способ привилегий!",
+        "password": "Пароль",
+        "enter_your_password": "Введите ваш пароль",
+        "forgot_your_password": "Забыли пароль?",
+        "last_step": "Последний шаг!",
+        "tell_us_your_interests": "Расскажите, что вас интересует",
+        "nutrition": "Питание",
+        "eating_healthy": "Здоровое и сбалансированное питание придаёт больше энергии",
+        "finish": "Завершить",
+        "welcome": "Добро пожаловать"
+    },
+    "errors":{
+        "phoneNumberError": "Номер телефона должен содержать 12 цифр",
+        "minimum_8_digits": "Минимум 8 символов",
+        "minimum_1_letter_1_number": "Минимум 1 буква и 1 цифра"
+      },
+    "main": {
+        "focus_on": "На чем вы хотели бы сосредоточиться?",
+        "search_for_nutrition": "Ищите питание, спортзал, подарки и т.д...",
+        "not_find_anything": "Не нашли ничего, на чем сосредоточиться?",
+        "everything": "Все",
+        "target_every_aspect": "Охватите все аспекты вашего благополучия, чтобы чувствовать себя счастливее",
+        "home": "Главная",
+        "take_benefit": "Получите выгоду",
+        "expenses": "Расходы",
+        "saved": "Сохранено",
+        "filters": "Фильтры",
+        "sort_by_newest": "Сортировать по: Сначала новые",
+        "sea_change_supplements": "Изменение в добавках",
+        "company_name": "Название компании",
+        "ethically_extracted_algae": "Сделано из этически добытого масла водорослей",
+        "nothing_fishy_supplements": "Добавки NothingFishy предлагают...",
+        "rated_by_users": "Оценено: {value} пользователями",
+        "used_by_users": "Используется: {value} пользователями",
+        "benefit_successfully_used": "Ваша выгода была успешно использована",
+        "help_coworkers_find": "Помогите коллегам найти лучшие места!",
+        "submit": "Отправить",
+        "tell_us_features": "Пожалуйста, расскажите, какие функции и торговцы вам хотелось бы видеть в нашем приложении"
+      },
+      "filter": {
+        "closestToOfficeLocation": "Ближе к офису",
+        "closestToCurrentLocation": "Ближе к моему текущему местоположению",
+        "bestOffer": "Лучшее предложение",
+        "mostPopular": "Самое популярное",
+        "newestFirst": "Сначала новые",
+        "rated4Plus": "Рейтинг 4+",
+        "priceHigh": "Цена высокая",
+        "priceLow": "Цена низкая",
+        "in2Km": "В пределах 2 км"
+      }
+      
+      
+}

@@ -1,20 +1,32 @@
 <template>
   <div class="phone-form">
-    <h4 class="title">EXPERIENCE A NEW WAY OF COMPANY BENEFITS</h4>
+    <h4 class="title">{{ t("auth.enter_password_for_benefits") }}</h4>
     <form @submit.prevent="handleSubmit" novalidate class="!mt-24">
       <div class="flex flex-col pb-10">
-        <label class="mb-1" for="password">Password</label>
-        <Password v-model="form.password" toggleMask :feedback="false" @input="handleInput" @blur="validatePassword">
+        <label class="mb-1" for="password">{{ t("auth.password") }}</label>
+        <Password
+          v-model="form.password"
+          toggleMask
+          :feedback="false"
+          :placeholder="t(`auth.enter_your_password`)"
+          @input="handleInput"
+          @blur="validatePassword"
+        >
         </Password>
         <div class="mt-4">
-          <p :class="minLengthClass" class="text-sm">Minimum 8 digits</p>
+          <p :class="minLengthClass" class="text-sm">{{ t("errors.minimum_8_digits") }}</p>
           <p :class="letterNumberClass" class="text-sm">
-            Minimum 1 letter and 1 number
+            {{ t("errors.minimum_1_letter_1_number") }}
           </p>
         </div>
       </div>
 
-      <MainButton class="!mt-20" @click="handleSubmit" color="#000000" text="Sign Up" />
+      <MainButton
+        class="!mt-20"
+        @click="handleSubmit"
+        color="#000000"
+        :text="t(`auth.sign_in`)"
+      />
     </form>
   </div>
 </template>
@@ -23,8 +35,9 @@
 import { ref, computed } from "vue";
 import Password from "primevue/password";
 import { MainButton } from "vue-tg";
+import { useI18n } from "vue-i18n";
 
-// Form state
+const { t } = useI18n();
 const form = ref({
   password: "",
 });

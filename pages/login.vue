@@ -5,8 +5,12 @@
         <LogoIcon class="w-full max-w-[156px]" />
         <LangDropdown v-if="currentStep !== 3" />
       </nav>
-      <h4 class="font-semibold text-lg mt-4 text-black" v-if="tgStore.webAppData.initDataUnsafe">
-        Welcome {{ tgStore.webAppData.initDataUnsafe.user?.first_name }}
+      <h4
+        class="font-semibold text-lg mt-4 text-black"
+        v-if="tgStore.webAppData.initDataUnsafe"
+      >
+        {{ t("auth.welcome") }}
+        {{ tgStore.webAppData.initDataUnsafe.user?.first_name }}
         {{ tgStore.webAppData.initDataUnsafe.user?.last_name }}
       </h4>
     </header>
@@ -29,9 +33,11 @@ import PasswordForm from "~/components/forms/passwordForm.vue";
 import boarding from "~/components/auth/boarding.vue";
 import { useTgWebAppStore } from "~/store/tgWebApp";
 import { useUserStore } from "~/store/user";
+import { useI18n } from "vue-i18n";
 
 const tgStore = useTgWebAppStore();
 const userStore = useUserStore();
+const { t } = useI18n();
 const currentStep = ref(1);
 onMounted(() => {
   if (userStore.isLoggedIn) {

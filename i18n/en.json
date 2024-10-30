@@ -1,3 +1,61 @@
 {
-    
+  "auth": {
+    "experience_new_way_of_benefits": "EXPERIENCE A NEW WAY OF COMPANY BENEFITS",
+    "phone_number": "Phone number",
+    "enter_your_phone_number": "Enter your phone number",
+    "share": "Share",
+    "sign_in": "Sign In",
+    "create_your_password": "Create your password",
+    "new_password": "New password",
+    "show": "Show",
+    "enter_password_for_benefits": "Enter your password to try new way of benefits!",
+    "password": "Password",
+    "enter_your_password": "Enter your password",
+    "forgot_your_password": "Forgot your password?",
+    "last_step": "Last step!",
+    "tell_us_your_interests": "Tell us what you’re interested in",
+    "nutrition": "Nutrition",
+    "eating_healthy": "Eating a healthy, balanced diet gives you more energy",
+    "finish": "Finish",
+    "welcome": "Welcome"
+  },
+  "errors":{
+    "phoneNumberError": "Phone number must be 12 digits long",
+    "minimum_8_digits": "Minimum 8 digits",
+    "minimum_1_letter_1_number": "Minimum 1 letter and 1 number"
+  },
+  "main": {
+        "focus_on": "What would you like to focus on?",
+        "search_for_nutrition": "Search for nutrition, gym, gift, etc...",
+        "not_find_anything": "Don’t find anything to focus on?",
+        "everything": "Everything",
+        "target_every_aspect": "Target every aspect of your wellbeing to feel happier",
+        "home": "Home",
+        "take_benefit": "Take a benefit",
+        "expenses": "Expenses",
+        "saved": "Saved",
+        "filters": "Filters",
+        "sort_by_newest": "Sort By: Newest First",
+        "sea_change_supplements": "A sea change in supplements",
+        "company_name": "Company name",
+        "ethically_extracted_algae": "Made from ethically extracted algae oil",
+        "nothing_fishy_supplements": "NothingFishy supplements offer...",
+        "rated_by_users": "Rated by: {value} users",
+        "used_by_users": "Used by: {value} users",
+        "benefit_successfully_used": "Your benefit was successfully used",
+        "help_coworkers_find": "Help your coworkers find the better places!",
+        "submit": "Submit",
+        "tell_us_features": "Please tell us what features and merchants you would love to see in our app"
+  },
+  "filter": {
+    "closestToOfficeLocation": "Closest to Office location",
+    "closestToCurrentLocation": "Closest to my current location",
+    "bestOffer": "Best offer",
+    "mostPopular": "Most popular",
+    "newestFirst": "Newest First",
+    "rated4Plus": "Rated 4+",
+    "priceHigh": "Price High",
+    "priceLow": "Price Low",
+    "in2Km": "In 2 km"
+  }
 }

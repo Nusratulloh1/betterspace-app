@@ -1,18 +1,22 @@
 <template>
   <div>
-    <h3 class="title !text-xl !mt-5">A sea change in supplements</h3>
+    <h3 class="title !text-xl !mt-5">{{ t("main.sea_change_supplements") }}</h3>
     <button
       class="flex items-center bg-transparent gap-2 py-2 px-4 mt-7 border border-solid border-[#00000014] rounded-xl"
     >
       <Rating v-model="value" />
-      <span class="text-xs text-[#5C6165] mt-0.5"> Rated by: 25 users </span>
+      <span class="text-xs text-[#5C6165] mt-0.5">
+        {{ t("main.rated_by_users", { value: 25 }) }}
+      </span>
     </button>
     <div class="flex items-center mt-4 gap-3">
       <button
         class="flex items-center bg-transparent gap-2 py-2 px-4 border border-solid border-[#00000014] rounded-xl text-[#5C6165]"
       >
         <SvgoIconUsers class="!w-5 !h-5" />
-        <span class="text-sm"> Used by: 250 users </span>
+        <span class="text-sm">
+          {{ t("main.used_by_users", { value: 250 }) }}
+        </span>
       </button>
       <button
         class="flex items-center bg-transparent gap-2 py-2 px-4 border border-solid border-[#00000014] rounded-xl"
@@ -58,7 +62,8 @@
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
-
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 const value = ref(0);
 definePageMeta({
   middleware: "auth",

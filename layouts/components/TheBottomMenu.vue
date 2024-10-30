@@ -3,7 +3,7 @@
     <div class="menus">
       <NuxtLink to="/">
         <SvgoIconHome class="w-7 h-7" />
-        Home
+        {{ t("main.home") }}
       </NuxtLink>
       <a href="#" class="relative" @click="showQr">
         <div
@@ -11,11 +11,11 @@
         >
           <SvgoIconBenefit class="!fill-white !w-5 !h-5"></SvgoIconBenefit>
         </div>
-        <span class="mt-8"> Take a benefit </span>
+        <span class="mt-8"> {{ t("main.take_benefit") }} </span>
       </a>
       <NuxtLink to="/expenses">
         <SvgoIconExpense class="w-7 h-7" />
-        Expenses
+        {{ t("main.expenses") }}
       </NuxtLink>
     </div>
   </div>
@@ -34,6 +34,7 @@ import { ScanQr, useWebAppQrScanner } from "vue-tg";
 import { computed, ref } from "vue";
 import { useTgWebAppStore } from "~/store/tgWebApp";
 import successStartForm from "~/components/forms/qrSuccessForm.vue";
+import { useI18n } from "vue-i18n";
 const tgStore = useTgWebAppStore();
 const WebAppQrScanner = useWebAppQrScanner();
 const qrResult = computed(() => tgStore.qrResult);
@@ -42,6 +43,7 @@ const showScan = ref(false);
 const showQr = () => {
   showScan.value = true;
 };
+const { t, locale } = useI18n();
 WebAppQrScanner.onScanQrPopupClosed((val: any) => {
   showScan.value = false;
   // visibleModal.value = true

@@ -1,5 +1,61 @@
 {
+    "auth": {
+        "experience_new_way_of_benefits": "KOMPANIYA IMTIYOZLARINING YANGI YO‘LINI SINAB KO‘RING",
+        "phone_number": "Telefon raqami",
+        "enter_your_phone_number": "Telefon raqamingizni kiriting",
+        "share": "Ulashish",
+        "sign_in": "Kirish",
+        "create_your_password": "Parol yarating",
+        "new_password": "Yangi parol",
+        "show": "Ko‘rsatish",
+        "enter_password_for_benefits": "Imtiyozlarning yangi yo‘lini sinab ko‘rish uchun parolingizni kiriting!",
+        "password": "Parol",
+        "enter_your_password": "Parolingizni kiriting",
+        "forgot_your_password": "Parolingizni unutdingizmi?",
+        "last_step": "So'nggi qadam!",
+        "tell_us_your_interests": "Qiziqishlaringizni ayting",
+        "nutrition": "Ovqatlanish",
+        "eating_healthy": "Sog‘lom va muvozanatli ovqatlanish ko‘proq energiya beradi",
+        "finish": "Tugatish",
+        "welcome": "Xush kelibsiz"
+    },
+    "errors":{
+        "phoneNumberError": "Telefon raqami 12 raqamdan iborat bo‘lishi kerak",
+        "minimum_8_digits": "Kamida 8 ta belgi",
+        "minimum_1_letter_1_number": "Kamida 1 ta harf va 1 ta raqam"
+      },
     "main": {
-        "name": "Nuxt 3"
-    }
+        "focus_on": "Nimaga e'tibor qaratmoqchisiz?",
+        "search_for_nutrition": "Ovqatlanish, sport zali, sovg'a va boshqalarni qidiring...",
+        "not_find_anything": "E'tibor qaratadigan hech narsa topilmadimi?",
+        "everything": "Hammasi",
+        "target_every_aspect": "O'zingizni baxtli his qilish uchun farovonligingizning har bir jihatiga e'tibor qarating",
+        "home": "Bosh sahifa",
+        "take_benefit": "Imtiyozni oling",
+        "expenses": "Xarajatlar",
+        "saved": "Saqlangan",
+        "filters": "Filtrlar",
+        "sort_by_newest": "Saralash: Yangi dastlab",
+        "sea_change_supplements": "Qo'shimchalardagi dengiz o'zgarishi",
+        "company_name": "Kompaniya nomi",
+        "nothing_fishy_supplements": "Etik jihatdan olingan suv o‘tlari yog‘idan tayyorlangan NothingFishy qo'shimchalari taklif qiladi...",
+        "rated_by_users": "Baholagan: {value} foydalanuvchilar",
+        "used_by_users": "Foydalanilgan: {value} foydalanuvchilar",
+        "benefit_successfully_used": "Sizning imtiyozingiz muvaffaqiyatli foydalanildi",
+        "help_coworkers_find": "Hamkasblaringizga yaxshi joylarni topishda yordam bering!",
+        "submit": "Yuborish",
+        "tell_us_features": "Bizning dasturimizda qanday xususiyatlar va savdogarlar ko'rishni istashingizni ayting"
+      },
+      "filter": {
+        "closestToOfficeLocation": "Ofisga eng yaqin",
+        "closestToCurrentLocation": "Hozirgi joylashuvimga eng yaqin",
+        "bestOffer": "Eng yaxshi taklif",
+        "mostPopular": "Eng mashhur",
+        "newestFirst": "Yangi avval",
+        "rated4Plus": "4+ baho",
+        "priceHigh": "Narxi yuqori",
+        "priceLow": "Narxi past",
+        "in2Km": "2 km ichida"
+      }
+      
 }
