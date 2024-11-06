@@ -1,5 +1,5 @@
 <template>
-  <div class="container !px-9 !pt-6 auth">
+  <div class="container !px-6 !pt-6 auth">
     <header>
       <nav class="flex items-center justify-between">
         <LogoIcon class="w-full max-w-[156px]" />
@@ -23,7 +23,6 @@
     <boarding v-else />
   </div>
 </template>
-
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import LogoIcon from "~/components/LogoIcon.vue";
@@ -38,7 +37,7 @@ import { useI18n } from "vue-i18n";
 const tgStore = useTgWebAppStore();
 const userStore = useUserStore();
 const { t } = useI18n();
-const currentStep = ref(2);
+const currentStep = ref(1);
 onMounted(() => {
   if (userStore.isLoggedIn) {
     navigateTo("/");

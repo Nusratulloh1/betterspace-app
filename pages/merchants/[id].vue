@@ -9,7 +9,7 @@
         {{ t("main.rated_by_users", { value: 25 }) }}
       </span>
     </button>
-    <div class="flex items-center mt-4 gap-3">
+    <div class="flex items-center flex-wrap mt-4 gap-3">
       <button
         class="flex items-center bg-transparent gap-2 py-2 px-4 border border-solid border-[#00000014] rounded-xl text-[#5C6165]"
       >

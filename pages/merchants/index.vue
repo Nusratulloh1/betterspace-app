@@ -11,7 +11,7 @@
         rounded
         size="large"
         :placeholder="t(`main.filters`)"
-        class="w-full md:w-56 !bg-[#0000000D] !border-none !text-[#191a1c] !rounded-full"
+        class="w-1/2 md:w-56 !bg-[#0000000D] !border-none !text-[#191a1c] !rounded-full"
       >
         <template #dropdownicon>
           <SvgoIconFilter class="!w-3 !h-2.5" color="#191a1c" />
@@ -24,7 +24,7 @@
         rounded
         size="large"
         :placeholder="t(`main.sort_by_newest`)"
-        class="w-full md:w-56 !bg-[#0000000D] !border-none !text-[#191a1c] !rounded-full"
+        class="w-1/2 md:w-56 !bg-[#0000000D] !border-none !text-[#191a1c] !rounded-full"
       >
         <template #dropdownicon>
           <SvgoIconArrow class="!w-3 !h-2.5" color="#191a1c" />

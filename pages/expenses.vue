@@ -1,5 +1,5 @@
 <template>
-  <div class="py-24 text-center">
+  <div class="py-20 text-center">
     <div
       class="bg-black inline-flex flex-col justify-center items-center py-3 px-8 rounded-xl"
     >
