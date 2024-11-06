@@ -38,7 +38,7 @@ import { useI18n } from "vue-i18n";
 const tgStore = useTgWebAppStore();
 const userStore = useUserStore();
 const { t } = useI18n();
-const currentStep = ref(1);
+const currentStep = ref(2);
 onMounted(() => {
   if (userStore.isLoggedIn) {
     navigateTo("/");
