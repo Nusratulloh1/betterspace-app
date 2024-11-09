@@ -2,19 +2,19 @@
   <div class="bottomMenu">
     <div class="menus">
       <NuxtLink to="/">
-        <SvgoIconHome class="w-7 h-7" />
+        <SvgoIconHome class="w-6 h-6" />
         {{ t("main.home") }}
       </NuxtLink>
       <a href="#" class="relative" @click="showQr">
         <div
-          class="bg-[#272727] !w-11 !h-11 absolute top-[-15px] rounded-full flex items-center justify-center pt-2 !text-white"
+          class="bg-[#272727] !w-14 !h-14 absolute top-[-45px] rounded-full flex items-center justify-center pt-2 !text-white"
         >
           <SvgoIconBenefit class="!fill-white !w-5 !h-5"></SvgoIconBenefit>
         </div>
-        <span class="mt-8"> {{ t("main.take_benefit") }} </span>
+        <span class="mt-3"> {{ t("main.take_benefit") }} </span>
       </a>
       <NuxtLink to="/expenses">
-        <SvgoIconExpense class="w-7 h-7" />
+        <SvgoIconExpense class="w-6 h-6" />
         {{ t("main.expenses") }}
       </NuxtLink>
     </div>
@@ -67,7 +67,7 @@ const submitForm = (data: any) => {
   width: 100%;
   backdrop-filter: blur(22.5572509765625px);
   background: #ffffff;
-  padding: 18px 22px 12px;
+  padding: 12px 44px 12px;
 
   .menus {
     display: flex;
@@ -79,15 +79,15 @@ const submitForm = (data: any) => {
       flex-direction: column;
       align-items: center;
       font-family: Poppins;
-      font-size: 14.05px;
+      font-size: 12.05px;
       font-weight: 500;
       line-height: 17.07px;
       color: #8c8c8c;
       text-decoration: none;
 
       svg {
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
         fill: #525252;
         margin-bottom: 6px;
       }
