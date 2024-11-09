@@ -1,5 +1,5 @@
 <template>
-  <div class="bottomMenu">
+  <div class="bottomMenu !shadow-2xl">
     <div class="menus">
       <NuxtLink to="/">
         <SvgoIconHome class="w-6 h-6" />
@@ -7,7 +7,7 @@
       </NuxtLink>
       <a href="#" class="relative" @click="showQr">
         <div
-          class="bg-[#272727] !w-14 !h-14 absolute top-[-45px] rounded-full flex items-center justify-center pt-2 !text-white"
+          class="bg-[#272727] !w-14 !h-14 absolute !shadow-2xl top-[-45px] rounded-full flex items-center justify-center pt-2 !text-white"
         >
           <SvgoIconBenefit class="!fill-white !w-5 !h-5"></SvgoIconBenefit>
         </div>
@@ -67,7 +67,7 @@ const submitForm = (data: any) => {
   width: 100%;
   backdrop-filter: blur(22.5572509765625px);
   background: #ffffff;
-  padding: 12px 44px 12px;
+  padding: 12px 40px 12px;
 
   .menus {
     display: flex;
