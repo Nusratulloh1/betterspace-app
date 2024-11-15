@@ -1,11 +1,11 @@
 <template>
   <header>
     <nav class="flex items-center justify-between">
-      <button class="bg-white pt-2 pb-1 px-3 rounded-2xl shadow-sm border-none">
-        <SvgoIconProfil class="!w-[22px] !h-[22px]" />
+      <button class="bg-white py-1.5 px-4 rounded-xl  shadow-sm border-none h-12">
+        <SvgoIconProfil class="!w-[24px] !h-[24px] !fill-black !stroke-black" color="black" />
       </button>
       <div
-        class="bg-black flex flex-col justify-center items-center gap-0.5 py-1.5 px-4 rounded-xl"
+        class="bg-black flex flex-col justify-center items-center gap-0.5 py-1.5 px-4 rounded-xl h-12"
       >
         <small class="text-[#909090]">{{ t("main.saved") }}</small>
         <strong class="!font-semibold text-sm text-white"> $15,000 </strong>

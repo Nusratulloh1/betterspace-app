@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h5 class="title !text-center">
+    <h5 class="title !text-center !text-3xl !mt-16">
       {{ t("main.focus_on") }}
     </h5>
     <InputGroup class="mt-6 !rounded-2xl">
