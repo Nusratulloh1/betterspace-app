@@ -6,7 +6,7 @@ export const useUserStore = defineStore('user', {
     }),
     actions: {
         login() {
-            this.isLoggedIn = true;
+            this.isLoggedIn = false;
         },
         logout() {
             this.isLoggedIn = false;
